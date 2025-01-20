@@ -1,0 +1,43 @@
+\title{Maps associated to an object in a double complex}
+\taxon{definition}
+\author{felixpätsch}
+\date{2025-01-19}
+\import{base-macros}
+
+\p{
+    Let #{A} be an object of a [double complex](fp-001C), with nearby maps labeled as
+    \texfig{
+        \begin{tikzcd}
+            \bullet & \bullet & \bullet \\
+            \bullet & A & \bullet \\
+            \bullet & \bullet & \bullet
+            \arrow["a", from=1-1, to=1-2]
+            \arrow["b", from=1-1, to=2-1]
+            \arrow[from=1-2, to=1-3]
+            \arrow["c", from=1-2, to=2-2]
+            \arrow[from=1-3, to=2-3]
+            \arrow["d", from=2-1, to=2-2]
+            \arrow[from=2-1, to=3-1]
+            \arrow["e", from=2-2, to=2-3]
+            \arrow["f", from=2-2, to=3-2]
+            \arrow["g", from=2-3, to=3-3]
+            \arrow[from=3-1, to=3-2]
+            \arrow["h", from=3-2, to=3-3]
+        \end{tikzcd}
+    }
+    Let #{p = ca = db} and #{q = ge = hf}.
+    Define
+
+    \ul{
+        \li{#{A_{hor} = \operatorname{Ker} e / \operatorname{Im} d}, the \italic{horizontal homology object at #{A}}}
+        \li{#{A_{ver} = \operatorname{Ker} f / \operatorname{Im} c}, the \italic{vertical homology object at #{A}}}
+        \li{#{ ^\square A = (\operatorname{Ker} e \cap \operatorname{Ker} f) / \operatorname{Im} p}, the \italic{receptor at #{A}}}
+        \li{#{A_{\square} = \operatorname{Ker} q / (\operatorname{Im} c + \operatorname{Im} d)}, the \italic{donor at #{A}}}
+    }
+
+    Note that for receptor and donor the #{\square} is toward the "long" map.
+}
+
+\transclude{fp-001F}
+\transclude{fp-001G}
+\transclude{fp-001H}

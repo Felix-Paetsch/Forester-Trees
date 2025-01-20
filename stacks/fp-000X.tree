@@ -1,0 +1,44 @@
+\title{[#{2}-isomorphic maps](fp-0008) induce the same map on [groupoid homology](fp-000F)}
+\taxon{lemma}
+\author{felixpätsch}
+\date{2025-01-18}
+\import{base-macros}
+
+\p{Let #{f,g : X_\bullet \rightarrow Y_\bullet} be two maps of [groupoid objects](fp-000Q). Let #{\theta} be an [isomorphism](fp-0008) between them.
+Consider the family #{h_\bullet} of maps given by:
+
+\texfig{
+\begin{tikzcd}[column sep=large, row sep=0.5em]
+C_n(X) \arrow[r, "h_n"] \arrow[d, equal]
+  & C_{n+1}(Y) \arrow[d, equal] \\[0.5em]
+\displaystyle \bigoplus_{p+q=n} C_p(X_q)
+  & \displaystyle \bigoplus_{p'+q'=n+1} C_{p'}(Y_{q'})\\[-.3em]
+{\rotatebox{90}{$\in$}}
+  & {\rotatebox{90}{$\in$}} \\[-.7em]
+[\Delta_p \to X_q] \arrow[r, mapsto]
+  & \displaystyle \sum_{i=0}^{q} (-1)^i \bigl[\Delta_p \to X_q \xrightarrow{\theta_i} Y_{q+1}\bigr]
+\end{tikzcd}
+}
+
+With #{\theta_i : X_q \rightarrow Y_{q+1}} given by sending
+
+##{p_0 \xrightarrow{\phi_1} p_1 \xrightarrow{\phi_2} \dots \xrightarrow{\phi_q} p_q}
+to
+
+\texfig{
+\begin{tikzcd}[]
+  f_0(p_0) \arrow[r, "f_1(\phi_1)"]
+    & f_0(p_1) \arrow[r, "f_1(\phi_2)"]
+    & \dots \arrow[r, "f_1(\phi_i)"]
+    & f_0(p_i)
+      \arrow[d, "\theta(p_i)"]
+  \\[0em]
+  & & &
+    g_0(p_i) \arrow[r, "g_1(\phi_{i+1})"]
+    & \dots \arrow[r, "g_1(\phi_q)"]
+    & g_0(p_q)
+\end{tikzcd}
+}
+
+Then one can verify that this gives a [chain homotopy]() between #{f} and #{g}.
+} 

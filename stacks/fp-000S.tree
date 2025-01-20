@@ -1,0 +1,12 @@
+\title{Morphism of [groupoid objects](fp-000Q)}
+\taxon{definition}
+\author{felixpätsch}
+\date{2025-01-17}
+\p{
+    Let #{X_\bullet \coloneqq  [X_1 \rightrightarrows X_0]} and #{Y_\bullet \coloneqq  [Y_1 \rightrightarrows Y_0]}
+    [groupoid objects.](fp-000-Q)
+
+    Then a morphism between them consists of maps #{f_0 : X_0 \rightarrow Y_0} and #{f_1 : X_1 \rightarrow Y_1} such that they commute with all structure maps.
+}
+
+\transclude{fp-0015}

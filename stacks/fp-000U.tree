@@ -1,0 +1,66 @@
+\title{Groupoid object commutative diagrams}
+\author{felixpätsch}
+\date{2025-01-18}
+\import{base-macros}
+
+\texfig{
+    \begin{tikzcd}
+        {X_0} & {X_0} \\
+        {X_1}
+        \arrow["{\operatorname{id}}", from=1-1, to=1-2]
+        \arrow["e"', from=1-1, to=2-1]
+        \arrow["{s,t}"', from=2-1, to=1-2]
+    \end{tikzcd}
+
+    \begin{tikzcd}
+        && {X_1\times_{X_0}X_1} \\
+        {X_1} && {X_1} && {X_1} \\
+        & {X_0} && {X_0}
+        \arrow["{\pi_1}"', from=1-3, to=2-1]
+        \arrow["m", from=1-3, to=2-3]
+        \arrow["{\pi_2}", from=1-3, to=2-5]
+        \arrow["s", from=2-1, to=3-2]
+        \arrow["s", from=2-3, to=3-2]
+        \arrow["t", from=2-3, to=3-4]
+        \arrow["t", from=2-5, to=3-4]
+    \end{tikzcd}
+}
+
+\texfig{
+    \begin{tikzcd}
+        & {X_1\times_{X_0}X_1\times_{X_0}X_1} \\
+        {X_1\times_{X_0}X_1} && {X_1\times_{X_0}X_1} \\
+        & {X_1}
+        \arrow["{(\operatorname{id},m)}", from=1-2, to=2-1]
+        \arrow["{(m,\operatorname{id})}"', from=1-2, to=2-3]
+        \arrow["m", from=2-1, to=3-2]
+        \arrow["m"', from=2-3, to=3-2]
+    \end{tikzcd}
+    \begin{tikzcd}
+        {X_1} && {X_1} \\
+        & {X_0}
+        \arrow["i", bend left=10, from=1-1, to=1-3]
+        \arrow["{s, t}"', from=1-1, to=2-2]
+        \arrow["i", bend left=10, from=1-3, to=1-1]
+        \arrow["{t, s}", from=1-3, to=2-2]
+    \end{tikzcd}
+}
+
+\texfig{
+    \begin{tikzcd}
+        {X_1\times_{X_0}X_1} & {X_1} \\
+        {X_1} & {X_0}
+        \arrow["m", from=1-1, to=2-1]
+        \arrow["{\operatorname{id}_{X_1}\times i}"', from=1-2, to=1-1]
+        \arrow["s", from=1-2, to=2-2]
+        \arrow["e", from=2-2, to=2-1]
+    \end{tikzcd}
+
+    \begin{tikzcd}
+        {X_1\times_{X_0}X_1} && {X_1} && {X_1\times_{X_0}X_1} \\
+        \arrow["m", bend left=5, above, from=1-1, to=1-3]
+        \arrow["{(\operatorname{id}_{X_1}, e \circ t)}", bend left=5, above, from=1-3, to=1-1]
+        \arrow["{(e \circ s, \operatorname{id}_{X_1})}", bend left=5, above, from=1-3, to=1-5]
+        \arrow["m", bend left=5, above, from=1-5, to=1-3]
+    \end{tikzcd}
+}

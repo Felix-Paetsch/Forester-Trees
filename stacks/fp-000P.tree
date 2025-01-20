@@ -1,0 +1,12 @@
+\title{Moriata equivalence}
+\taxon{definition}
+\author{felixpätsch}
+\date{2025-01-17}
+
+\p{
+    Two [groupoid objects](fp-000Q) #{X_\bullet} and #{Y_\bullet} [(in #{\mathbf{Top}} or #{\mathbf{Mfd_\R}})](todo) are morita equivalent 
+    if there exists a third groupoid object #{Z_\bullet} together 
+    with [morita morphisms](fp-000T) #{Z_\bullet \rightarrow X_\bullet} and #{Z_\bullet \rightarrow Y_\bullet}.
+}
+
+\transclude{fp-000T}

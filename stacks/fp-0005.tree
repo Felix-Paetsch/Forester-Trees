@@ -1,0 +1,19 @@
+\title{Topological Stacks}
+\author{felixpätsch}
+\date{2025-01-14}
+
+\p{A topological stack is a [stack]() top->grpd presented by a topological groupoid.}
+\p{Alternative definition.. on groupoids and groupoids presenting stacks.. on (pretop) stacks etc.}
+
+\p{
+  Want to keep as much top out of discussion for (presentable) groupoids.
+
+  Several ways to see stacks, top stacks, top groupoids, ...
+  their equivalences...
+  2-categories...
+  fibered categories...
+  stackification...
+
+  Discrete groups are via
+  top spaces are via
+}

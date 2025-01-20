@@ -1,0 +1,28 @@
+\title{Groupoid object}
+\taxon{definition}
+\author{felixpätsch}
+\date{2025-01-17}
+\import{base-macros}
+
+\p{A groupoid object #{X_\bullet} in a category #{\mathcal{C}} admitting finite fibered products consists of the following data:}
+\ul{
+    \li{An "object" object #{X_0 \in \mathcal{C}}}
+    \li{A "morphism" object #{X_1 \in \mathcal{C}}}
+    \li{Source and target maps #{s,t : X_1 \rightarrow X_0}}
+    \li{Multiplication #{m : X_1\times_{X_0} X_1 \rightarrow X_1}}
+    \li{Involution #{i : X_1 \rightarrow X_1}}
+    \li{Unit #{\operatorname{e} : X_0 \rightarrow X_1}}
+}
+
+\p{Such that certain diagrams commute:}
+
+\put\transclude/expanded{false}
+\put\transclude/numbered{false}
+\transclude{fp-000U}
+\put\transclude/expanded{true}
+\transclude{fp-000V}
+\put\transclude/numbered{true}
+
+\transclude{fp-000Z}
+\transclude{fp-000Y}
+\transclude{fp-0010}

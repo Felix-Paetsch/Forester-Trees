@@ -1,0 +1,6 @@
+\title{Groupoid}
+\taxon{definition}
+\author{felixpätsch}
+\date{2025-01-17}
+
+\p{A groupoid is a category in which every morphism is an isomorphism. It is equivalently a [groupoid obejct](fp-000Q) over #{\mathbf{Set}}}

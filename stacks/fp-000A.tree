@@ -1,0 +1,30 @@
+\title{Every [natural transformation]() of maps between groupoids is an isomorphism}
+\taxon{lemma}
+\author{felixpätsch}
+\import{base-macros}
+\date{2025-01-16}
+
+\p{Let #{F,G : \mathscr{G} \rightarrow \mathscr{H}} two functors between groupoids (seen as categories). Let #{\theta : F \Rightarrow G} a natural transformation. Define #{\theta^{-1} : G \Rightarrow F} by 
+
+\texfig{
+  \begin{tikzcd}
+    {F(X)} && {F(Y)} \\
+    \\
+    {G(X)} && {G(Y)}
+    \arrow[from=1-1, to=1-3]
+    \arrow["{\theta(X)}"', bend right=20, from=1-1, to=3-1]
+    \arrow["{\theta(Y)}"', bend right=20, from=1-3, to=3-3]
+    \arrow["{\theta^{-1}(X)}"', bend right=20, from=3-1, to=1-1]
+    \arrow[from=3-1, to=3-3]
+    \arrow["{\theta^{-1}(Y)}"', bend right=20, from=3-3, to=1-3]
+\end{tikzcd}
+}
+
+where the inverse of #{\theta(\cdot)} is given by the groupoid structure.
+}
+
+\p{
+  When viewing #{\mathscr{F}} and #{\mathscr{G}} as [groupoid objects]() #{[F_1 \rightrightarrows F_0]} and #{[G_1 \rightrightarrows G_0]} a [#{2}-morphism between #{f,g : F \Rightarrow G}](fp-0008) is just given by a map #{\theta : F_0 \rightarrow G_1} such that certain diagrams commute. Now the inverse [#{2}-morphism]() is given by #{i \circ \theta} where #{i} is the involution #{G_1 \rightarrow G_1}.
+}
+
+\p{This result then also holds for [groupoids over abitrary #{\mathcal{C}}.](fp-000Q)}

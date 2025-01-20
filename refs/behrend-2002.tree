@@ -1,0 +1,13 @@
+\title{Cohomology of Stacks}
+\author{Kai Behrend}
+\taxon{reference}
+\date{2002}
+
+\meta{bibtex}\verb<<<|
+@misc{behrend-2002,
+  author       = {Behrend, K.},
+  title        = {Cohomology of Stacks},
+  howpublished = {\url{https://personal.math.ubc.ca/~behrend/CohSta-1.pdf}},
+  note         = {Lectures given at the School and Conference on Intersection Theory and Moduli, September 9–27, 2002},
+  year         = {2002}
+}<<<

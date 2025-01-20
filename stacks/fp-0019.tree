@@ -1,0 +1,24 @@
+\title{The maps two #{X_1 \rightarrow Y_1} agree}
+\author{felixpätsch}
+\date{2025-01-18}
+
+\p{
+    We want to show 
+    ##{
+        f_1 \circ m \circ (\theta \circ s, \operatorname{id}_{X_1}) = f_1 \circ m \circ (s_1 \circ f_1, \theta \circ t)
+    }
+    But as #{s} is a groupoid morphism we get:
+    ##{
+        \begin{aligned}
+            f_1 \circ m \circ (s_1 \circ f_1, \theta \circ t) &= m \circ (f_1 \circ s_1 \circ f_1, f_1 \circ \theta \circ t)\\
+            &= m \circ (f_1, e \circ f_0 \circ t)\\
+            &= m \circ (f_1, e \circ t \circ f_1)\\
+            &= f_1\\
+            f_1 \circ m \circ (\theta \circ s, \operatorname{id}_{X_1}) &= m \circ (f_1 \circ \theta \circ s, f_1) \\
+            &= m \circ (e \circ f_0 \circ s, f_1) \\
+            &= m \circ (e \circ s \circ f_1, f_1) \\
+            &= f_1
+            
+        \end{aligned}
+    }
+}

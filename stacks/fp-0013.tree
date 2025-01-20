@@ -1,0 +1,17 @@
+\title{Any section of a [morita morphism](fp-000T) induces a [morphism of groupoid objects](fp-000S)}
+\taxon{lemma}
+\author{felixpätsch}
+\date{2025-01-18}
+
+\p{
+    Let #{f : X_\bullet \rightarrow Y_\bullet} be a [morita morphism](fp-000T). Any section #{s_0 : Y_0 \rightarrow X_0} of #{f_0}
+    induces uniquely a groupoid morphism #{s : Y_\bullet \rightarrow X_\bullet} with
+    ##{
+        \begin{aligned}
+            f\circ s = &\operatorname{id}_{Y_\bullet} \\
+            s\circ f \cong  &\operatorname{id}_{X_\bullet}
+        \end{aligned}
+    }
+}
+
+\transclude{fp-0014}

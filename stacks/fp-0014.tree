@@ -1,0 +1,39 @@
+\taxon{proof}
+\author{felixpätsch}
+\date{2025-01-18}
+\import{base-macros}
+
+
+\p{
+    By #{f} being a morita morhpism we get unique existence of the dotted arrow in:
+}
+
+\texfig{
+    \begin{tikzcd}
+        {Y_1} \\
+        & {X_1} & {X_0\times X_0} \\
+        & {Y_1} & {Y_0\times Y_0}
+        \arrow[dashed, from=1-1, to=2-2]
+        \arrow["{(s_0\times s_0)\circ(s,t)}", bend left=15, from=1-1, to=2-3]
+        \arrow["{\operatorname{id}_{Y_1}}"', bend right=15, from=1-1, to=3-2]
+        \arrow["{(s,t)}", from=2-2, to=2-3]
+        \arrow[from=2-2, to=3-2]
+        \arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=2-2, to=3-3]
+        \arrow["{f_0 \times f_0}"', from=2-3, to=3-3]
+        \arrow["{(s,t)}"', from=3-2, to=3-3]
+        \arrow["{s_0\times s_0}"', shift right=0, bend right=30, from=3-3, to=2-3]
+    \end{tikzcd}
+}
+
+\p{
+    This is a [morhism of groupoid objects](fp-000S) as [all structure morphisms commute.](fp-0015)
+    Commutativity of the diagrams follows by
+}
+
+\transclude{fp-001B}
+
+\p{
+    We have #{f \circ s = \operatorname{id}_{Y_\bullet}} as #{s_0} was a section and #{f_1 \circ s_1 = \operatorname{id}_{Y_1}} holds by construction. So have left to give an isomorphism #{\theta : s \circ f \Rightarrow \operatorname{id}_{X_\bullet}.}
+}
+
+\transclude{fp-0018}

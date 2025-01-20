@@ -1,0 +1,39 @@
+\title{[Groupoid cohomology via simplicial nerve](fp-000F) is [functorial]()}
+\taxon{lemma}
+\author{felixpätsch}
+\date{2025-01-17}
+\import{base-macros}
+
+\p{
+    Given a [map](fp-000S) #{f} between two groupoids #{[X_1 \rightrightarrows X_0]} and #{[Y_1 \rightrightarrows Y_0]} 
+    we get a map of [total complexes]() #{C_\bullet(X_\bullet) \rightarrow C_\bullet(Y_\bullet)} by
+    ##{
+        \begin{aligned}
+            C_p(X_q) &\rightarrow C_p(Y_q) \\
+            [\Delta_p \rightarrow X_q] &\mapsto [\Delta_p \rightarrow X_q \xrightarrow{f_1\times\dots\times f_1} Y_q]
+        \end{aligned}
+    } 
+
+    with #{f_1\times\dots\times f_1 : X_q \rightarrow Y_q} given for #{q = 2} by
+}
+
+\texfig{
+    \begin{tikzcd}
+        & {X_1\times_{X_0}X_1} \\
+        {X_1} && {X_1} \\
+        & {Y_1\times_{Y_0}Y_1} \\
+        {Y_1} && {Y_1} \\
+        & {Y_0}
+        \arrow[from=1-2, to=2-1]
+        \arrow[from=1-2, to=2-3]
+        \arrow["{f_1\times f_1}", dashed, from=1-2, to=3-2]
+        \arrow["{f_1}", from=2-1, to=4-1]
+        \arrow["{f_1}", from=2-3, to=4-3]
+        \arrow[from=3-2, to=4-1]
+        \arrow[from=3-2, to=4-3]
+        \arrow["s"', from=4-1, to=5-2]
+        \arrow["t", from=4-3, to=5-2]
+    \end{tikzcd}
+}
+
+\p{Where the outer maps agree on #{Y_0} as #{f} is a [groupoid morphism](fp-000S). This by construction is [functorial]().}

@@ -1,0 +1,18 @@
+\title{On diagram-chasing in double complexes}
+\author{George M. Bergman}
+\taxon{reference}
+\date{2012}
+\meta{bibtex}\verb<<<|
+@article{bergman2012diagram,
+  title={On diagram-chasing in double complexes},
+  author={Bergman, George M.},
+  journal={Theory and Applications of Categories},
+  volume={26},
+  pages={60--96},
+  year={2012},
+  publisher={Theory and Applications of Categories},
+  eprint={1108.0958},
+  archivePrefix={arXiv},
+  primaryClass={math.CT},
+  url={https://arxiv.org/abs/1108.0958}
+}<<<

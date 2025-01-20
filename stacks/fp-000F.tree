@@ -1,0 +1,91 @@
+\title{Behrends Construction}
+\author{felixpätsch}
+\date{2025-01-17}
+\import{base-macros}
+
+\put\transclude/numbered{false}
+\put\transclude/toc{false}
+
+\p{
+    We construct a (co)homology theory for groupoid objects in a category with fibered products extending a given (co)homology theory. This somewhat directly follows [K. Behrend](behrend-2002).
+}
+
+\transclude{fp-000G}
+
+\p{
+    Now take on each #{X_n} the [simplicial complex]() #{C_\bullet(\cdot)}, so we get
+
+    \texfig{
+    \begin{tikzcd}
+        \dots & {C_\bullet(X_3)} & {C_\bullet(X_2)} & {C_\bullet(X_1)} & {C_\bullet(X_0)}
+        \arrow[from=1-1, to=1-2, shift left=2, -{Stealth}]
+        \arrow[from=1-1, to=1-2, shift left=1, -{Stealth}]
+        \arrow[from=1-1, to=1-2, -{Stealth}]
+        \arrow[from=1-1, to=1-2, shift right=1, -{Stealth}]
+        \arrow[from=1-1, to=1-2, shift right=2, -{Stealth}]
+        \arrow[from=1-2, to=1-3, shift left=1.5, -{Stealth}]
+        \arrow[from=1-2, to=1-3, shift left=.5, -{Stealth}]
+        \arrow[from=1-2, to=1-3, shift right=.5, -{Stealth}]
+        \arrow[from=1-2, to=1-3, shift right=1.5, -{Stealth}]
+        \arrow[from=1-3, to=1-4, shift left=1, -{Stealth}]
+        \arrow[from=1-3, to=1-4, -{Stealth}]
+        \arrow[from=1-3, to=1-4, shift right=1, -{Stealth}]
+        \arrow[from=1-4, to=1-5, shift left=.5, -{Stealth}]
+        \arrow[from=1-4, to=1-5, shift right=.5, -{Stealth}]
+    \end{tikzcd}
+    }
+    to make this a [double complex](fp-001C) define the horizontal boundary map as
+
+    ##{
+        \begin{aligned}
+        \partial &= \sum_{i=0}^p (-1)^i \partial_i : C_\bullet(X_p) \to C_\bullet(X_{p-1}) \\
+        [\Delta_n \to X_p] &\mapsto \sum_{i=0}^p (-1)^i \big[\Delta_n \to X_p \xrightarrow{\partial_i} X_{p-1}\big]
+        \end{aligned}
+    }
+
+    where the #{\partial_i} are just the maps from the simplicial nerve. We then get a double complex #{C_\bullet(X_\bullet)}
+
+    \texfig{
+        \begin{tikzcd}
+        & \dots & \dots & \dots \\
+            \dots & {C_2(X_2)} & {C_2(X_1)} & {C_2(X_0)}\\
+            \dots & {C_1(X_2)} & {C_1(X_1)} & {C_1(X_0)}\\
+            \dots & {C_0(X_2)} & {C_0(X_1)} & {C_0(X_0)}
+            \arrow[from=1-2, to=2-2]
+            \arrow[from=1-3, to=2-3]
+            \arrow[from=1-4, to=2-4]
+            \arrow[from=2-1, to=2-2]
+            \arrow[from=2-2, to=2-3, "\partial"]
+            \arrow[from=2-2, to=3-2, "d"]
+            \arrow[from=2-3, to=2-4, "\partial"]
+            \arrow[from=2-3, to=3-3, "d"]
+            \arrow[from=2-4, to=3-4, "d"]
+            \arrow[from=3-1, to=3-2]
+            \arrow[from=3-2, to=3-3, "\partial"]
+            \arrow[from=3-2, to=4-2, "d"]
+            \arrow[from=3-3, to=3-4, "\partial"]
+            \arrow[from=3-3, to=4-3, "d"]
+            \arrow[from=3-4, to=4-4, "d"]
+            \arrow[from=4-1, to=4-2]
+            \arrow[from=4-2, to=4-3, "\partial"]
+            \arrow[from=4-3, to=4-4, "\partial"]
+        \end{tikzcd}
+    }
+
+    where #{d} is just the normal boundary map from the simplicial complex #{C_\bullet}. It is easy to see that the complex is indeed commutative and has complexes as rows and columns.
+}
+
+\p{We can now construct the corresponding total complex (overloading notation) #{C_\bullet \coloneqq \operatorname{tot}(C_\bullet(X_\bullet))}.}
+
+\put\transclude/expanded{false}
+\transclude{fp-000H}
+\put\transclude/expanded{true}
+
+\p{We define the (co)Homology groups of the groupoid to be [those of the complex](): 
+    ##{
+        \begin{aligned}
+            H_n([X_1 \rightrightarrows X_0]) \coloneqq H_n([X_1 \rightrightarrows X_0], \Z) &\coloneqq H_n(C_\bullet) \\
+            H^n([X_1 \rightrightarrows X_0]) \coloneqq H^n([X_1 \rightrightarrows X_0], \Z) &\coloneqq H^n(\operatorname{Hom}(C_\bullet, \Z))
+        \end{aligned}
+    }
+}

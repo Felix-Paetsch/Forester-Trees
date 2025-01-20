@@ -1,0 +1,11 @@
+\title{Commutativity of the structure morphisms}
+\author{felixpätsch}
+\date{2025-01-18}
+
+\put\transclude/expanded{false}
+\ol{
+    \li{The dotted arrow involuted before or after has the universal property of the construction after swapping all tuples #{(s,t)}; meaning #{s_1} commutes with involution and by construction preserves #{s} and #{t}.}
+    \li{\transclude{fp-0016}}
+    \li{\transclude{fp-0017}}
+}
+\put\transclude/expanded{true}

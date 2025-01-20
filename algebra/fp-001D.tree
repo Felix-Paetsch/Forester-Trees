@@ -1,0 +1,7 @@
+\title{Diagram chasing in [double complexes](fp-001C)}
+\author{felixpätsch}
+\date{2025-01-19}
+
+\p{We mostly follow [this exposition](bergman-2012) by George M. Berman.}
+\transclude{fp-001E}
+\transclude{fp-001I}

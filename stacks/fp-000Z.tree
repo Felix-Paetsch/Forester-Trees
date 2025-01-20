@@ -1,0 +1,8 @@
+\title{The category of groupoid objects over #{\mathcal{C}}}
+\author{felixpätsch}
+\date{2025-01-18}
+
+\transclude{fp-000S}
+\transclude{fp-0008}
+
+\p{The class of all groupoid objects over #{\mathcal{C}} then forms a [#{2}-category]().}

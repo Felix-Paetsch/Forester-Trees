@@ -1,0 +1,26 @@
+\title{Todo}
+\author{felixpätsch}
+\p{This has to be refined/replaced by proper notions}
+
+\p{Some further things todo are}
+\ul{
+    \li{Put some algebra 2 exercises}
+    \li{Put own random notes}
+    \li{get references/backlinks to work (probably after forester V5)}
+    \li{refactor; incorporate knowledge on groupoids as stacks, maybe on sites}
+}
+
+\p{
+  Want to keep as much top out of discussion for (presentable) groupoids.
+
+  Several ways to see stacks, top stacks, top groupoids, ...
+  their equivalences...
+  2-categories...
+  fibered categories...
+  stackification...
+
+  Discrete groups are via
+  top spaces are via
+
+  babasfsad
+}

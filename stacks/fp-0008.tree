@@ -1,0 +1,36 @@
+\title{#{2}-isomorphism of groupoid maps}
+\taxon{definition}
+\date{2025-01-16}
+\author{felixpätsch}
+\import{base-macros}
+
+\p{Given two [maps of groupoids](fp-000S) (or [groupoid objects](fp-000Q) in #{\mathcal{C}}) #{f, g: [X_1 \rightrightarrows X_0] \rightarrow [Y_1 \rightrightarrows Y_0]}, a #{2}-isomorphism between them is a map #{\theta : X_0 \rightarrow Y_1} in #{\mathcal{C}} such that the following holds:}
+
+\ol{
+    \li{#{s \circ \theta = f_0}}
+    \li{#{t \circ \theta = g_0}}
+    \li{#{(\theta \circ s) \cdot f_1 = g_1 \cdot (\theta \circ t)}}
+}
+
+\p{
+  Thinking of a [groupoid]() as a category in which each morphism is an isomorphism, we get that a #{2}-isomorphism #{\theta : f \Rightarrow  g} between #{f,g : X_\bullet \rightarrow Y_\bullet} is just a [natural transformation]() #{\theta : f \Rightarrow  g}
+
+\texfig{
+  \begin{tikzcd}
+    {f(X)} && {f(Y)} \\
+    {g(X)} && {g(Y)}
+    \arrow[from=1-1, to=1-3]
+    \arrow["{\theta(X)}"', from=1-1, to=2-1]
+    \arrow["{\theta(Y)}"', from=1-3, to=2-3]
+    \arrow[from=2-1, to=2-3]
+  \end{tikzcd}
+}
+
+  such that the map #{X_0 \in x \mapsto (\theta(x) : f(x) \mapsto f(y)) \in Y_1} is an element of #{\mathcal{C}}. In this light note the following
+}
+
+
+\put\transclude/numbered{false}
+\put\transclude/expanded{false}
+\transclude{fp-000A}
+

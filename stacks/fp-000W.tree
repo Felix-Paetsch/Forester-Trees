@@ -1,0 +1,12 @@
+\title{Bachelor thesis topic}
+\author{felixpätsch}
+\date{2025-01-18}
+
+\p{I am working on defining (and proving things about) [cohomology theories]() on [topological stacks](fp-0005). These theories should:}
+
+\ul{
+  \li{Agree with [group cohomology]()}
+  \li{Agree with [singular (co)homology]() on topological spaces}
+  \li{Be invariant under [Morita Equivalence](fp-000P)}
+  \li{Should have normal (co)[homology properties]() like [SES #{\rightarrow} LES](), [excision](), [etc.]()}
+}

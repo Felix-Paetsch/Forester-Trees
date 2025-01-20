@@ -1,0 +1,47 @@
+\title{[Salamander Lemma](fp-001I) (other orientation)}
+\taxon{theorem}
+\author{felixpätsch}
+\date{2025-01-19}
+\import{base-macros}
+
+\p{
+    After [George Bergman](bergman-2012). For the definition of the maps see [here](fp-001E).
+}
+
+\texfig{
+    \begin{tikzcd}
+        & {} \\
+        C & A & {} \\
+        {} & B & D \\
+        & {}
+        \arrow[no head, from=1-2, to=2-2]
+        \arrow[from=2-1, to=2-2]
+        \arrow[no head, from=2-2, to=2-3]
+        \arrow[from=2-2, to=3-2]
+        \arrow[no head, from=3-1, to=3-2]
+        \arrow[from=3-2, to=3-3]
+        \arrow[no head, from=3-2, to=4-2]
+    \end{tikzcd}
+}
+
+\p{
+    Suppose #{A \rightarrow B} is a vertical arrow in a [double complex](fp-001C), and #{C}, #{D} are the objects left of #{A} and right of #{B} respectively.
+    Then the following #{6}-term sequence is exact:
+}
+
+\texfig{
+    \begin{tikzcd}
+        & {^\square A} \\
+        {C_\square} && {A_{ver}} & {A_\square} & {^\square B} & {B_{ver}} && {^\square D} \\
+        &&&&&& {B_\square}
+        \arrow[from=1-2, to=2-3]
+        \arrow[from=2-1, to=1-2]
+        \arrow[from=2-1, to=2-3]
+        \arrow[from=2-3, to=2-4]
+        \arrow[from=2-4, to=2-5]
+        \arrow[from=2-5, to=2-6]
+        \arrow[from=2-6, to=2-8]
+        \arrow[from=2-6, to=3-7]
+        \arrow[from=3-7, to=2-8]
+    \end{tikzcd}
+}

@@ -1,0 +1,30 @@
+\title{Morita morphism}
+\taxon{definition}
+\author{felixpätsch}
+\import{base-macros}
+
+\date{2025-01-17}
+\p{A morita morphism [(in #{\mathbf{Top}} or #{\mathbf{Mfd_\R}})](todo) between two [groupoid objects](fp-000Q) 
+is a [morphism of groupoids](fp-000S) #{f : X_\bullet \rightarrow Y_\bullet} such that}
+
+\ul{
+    \li{#{f_0 : X_0 \rightarrow Y_0} is a surjective submersion, i.e. admits local sections}
+    \li{
+        The following diagram is [cartesian](empty)
+        \texfig{
+            \begin{tikzcd}
+                {X_1} & {X_0\times X_0} \\
+                {Y_1} & {Y_0 \times Y_0}
+                \arrow["{s,t}", from=1-1, to=1-2]
+                \arrow["{f_1}"', from=1-1, to=2-1]
+                \arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=1-1, to=2-2]
+                \arrow["{f_0 \times f_0}", from=1-2, to=2-2]
+                \arrow["{s,t}"', from=2-1, to=2-2]
+            \end{tikzcd}
+        }
+    }
+}
+
+\p{
+    Here the diagram being cartesian [translates into](todo) #{f} being fully faithful (consider maps from a point.) And the requirement on #{f_0} is a bit stronger than #{f} being [essentially surjective](todo).
+}

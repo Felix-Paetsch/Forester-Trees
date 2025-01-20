@@ -1,0 +1,17 @@
+\title{Properties of [Behrends](behrend-2002) [cohomology construction](fp-000F)}
+\author{felixpätsch}
+\date{2025-01-17}
+
+\p{[The construction](fp-000F) for cohomology on groupoids has the following nice properties:}
+
+\put\transclude/expanded{false}
+\ol{
+    \li{\transclude{fp-000K}}
+    \li{\transclude{fp-000M}}
+    \li{\transclude{fp-000N}}
+    \li{\transclude{fp-000X}}
+}
+
+\p{Additionally we know}
+\put\transclude/expanded{true}
+\transclude{fp-000O}

@@ -1,0 +1,50 @@
+\title{#{s} commutes with the unity morphism #{e}}
+\author{felixpätsch}
+\import{base-macros}
+
+\date{2025-01-18}
+\p{
+    We show that #{Y_0 \xrightarrow{s_0} X_0 \xrightarrow{e} X_1 = Y_0 \xrightarrow{e} Y_1 \xrightarrow{s_1} X_1},
+    i.e. the second diagram [here](fp-0015) commutes. But both morphisms fit into commutative diagrams:
+}
+
+\texfig{
+    \begin{tikzcd}
+        {Y_0} \\
+        & {X_0} \\
+        && {X_1} & {X_0\times X_0} \\
+        && {Y_1} & {Y_0 \times Y_0}
+        \arrow["{s_0}", from=1-1, to=2-2]
+        \arrow["{s_0\times s_0}", bend left=20, from=1-1, to=3-4]
+        \arrow["e"', bend right, from=1-1, to=4-3]
+        \arrow["e", from=2-2, to=3-3]
+        \arrow["{(s,t)}", from=3-3, to=3-4]
+        \arrow["{f_1}", from=3-3, to=4-3]
+        \arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=3-3, to=4-4]
+        \arrow["{f_0 \times f_0}", from=3-4, to=4-4]
+        \arrow["{(s,t)}"', from=4-3, to=4-4]
+    \end{tikzcd}
+}
+
+\texfig{
+    \begin{tikzcd}
+        {Y_0} \\
+        & {Y_1} \\
+        && {X_1} & {X_0\times X_0} \\
+        && {Y_1} & {Y_0 \times Y_0}
+        \arrow["e", from=1-1, to=2-2]
+        \arrow["{s_0\times s_0}", bend left=45, from=1-1, to=3-4]
+        \arrow["e"', bend right=30, from=1-1, to=4-3]
+        \arrow["{s_1}",from=2-2, to=3-3]
+        \arrow["{(s_0\times s_0)(s,t)}"{pos=0.1}, bend left=10, dotted, from=2-2, to=3-4]
+        \arrow["{\operatorname{id}}"', bend right=10, dotted, from=2-2, to=4-3]
+        \arrow["{(s,t)}", from=3-3, to=3-4]
+        \arrow["{f_1}", from=3-3, to=4-3]
+        \arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=3-3, to=4-4]
+        \arrow["{f_0 \times f_0}", from=3-4, to=4-4]
+        \arrow["{(s,t)}"', from=4-3, to=4-4]
+    \end{tikzcd}
+}
+
+\p{The maps #{Y_0 \rightarrow Y_1} and #{Y_0 \times X_0 \times X_0} agree on #{Y_0\times Y_0} as they come by straightforward computation from a single map to #{X_1}. 
+As the bottom right rectangle is cartesian, there is only one map #{Y_0 \rightarrow X_1} compatible with all the other arrows, so they must agree.}

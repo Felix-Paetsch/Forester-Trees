@@ -1,0 +1,13 @@
+\title{Groupoid objects as categories}
+\author{felixpätsch}
+
+\date{2025-01-18}
+
+\p{If #{\mathcal{C}} is a subcategory of #{\mathbf{Set}} you can think of #{X_\bullet} as a category, indeed a [groupoid](fp-000R), whose objects are #{X_0} and whose morphisms are #{X_1} such that the
+structure maps belong to #{\mathcal{C}}. 
+Then multiplication becomes composition, involution becomes inverse and so on.}
+
+\p{
+    The class of all groupoid objects over #{\mathcal{C}} forms a [#{2}-category]() where the [morphisms](fp-0008) are functors 
+    and the [#{2}-morphisms](fp-0008) are [natural transformations]() between the functors, both respecting the #{\mathcal{C}}-structure.
+}

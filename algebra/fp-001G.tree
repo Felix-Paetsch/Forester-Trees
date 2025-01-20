@@ -1,0 +1,18 @@
+\taxon{lemma}
+\author{felixpätsch}
+\date{2025-01-19}
+\import{base-macros}
+
+\p{Each arrow #{r : A \rightarrow B} in a double complex induces an arrow #{A_\square \rightarrow ^\square B}. 
+We call this map the extramural map associated to #{f}.}
+
+\put\transclude/expanded{false}
+\proof{
+    \p{Define the maps as [here](fp-001E). Wlog #{r} goes horizontal, so #{r = e_A = d_B} We need to show the following includions:}
+    \ul{
+        \li{#{e_A(\operatorname{Ker} q_A) = e_A(\operatorname{Ker} g_A \circ e_A) \subset \operatorname{Ker} g_A = \operatorname{Ker} f_B}}
+        \li{#{e_A(\operatorname{Ker} q_A) = e_A(\operatorname{Ker} g_A \circ e_A) \subset \operatorname{Im} e_A = \operatorname{Im} d_B \subset \operatorname{Ker} e_B}}
+        \li{#{e_A(\operatorname{Im} c_A) = \operatorname{Im} c_A \circ e_A = \operatorname{Im} p_B}}
+        \li{#{e_A(\operatorname{Im} d_A) = 0 \subset \operatorname{Im} p_B}}
+    }
+}

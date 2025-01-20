@@ -1,0 +1,42 @@
+\title{The two maps #{X_1 \rightarrow X_0 \times X_0} agree}
+\author{felixpätsch}
+\date{2025-01-18}
+
+\p{
+    For this it again suffices to show that the pairs of maps
+    #{X_1 \rightarrow X_0 \times X_0 \xrightarrow{\pi_1} X_0} and #{X_1 \rightarrow X_0 \times X_0 \xrightarrow{\pi_2} X_0} each agree.
+}
+
+\ol{
+    \li{
+        We want to show 
+        ##{
+            \pi_1 \circ (s,t) \circ m \circ (\theta \circ s, \operatorname{id}_{X_1}) = \pi_1 \circ (s,t) \circ m \circ (s_1 \circ f_1, \theta \circ t)
+        }
+        But 
+        ##{
+            \begin{aligned}
+                \pi_1 \circ (s,t) \circ m \circ (\theta \circ s, \operatorname{id}_{X_1}) &= s \circ \theta \circ s\\
+                &= s_0 \circ f_0 \circ s\\
+                \pi_1 \circ (s,t) \circ m \circ (s_1 \circ f_1, \theta \circ t) &=s \circ s_1 \circ f_1\\
+                &= s_0 \circ f_0 \circ s\\
+            \end{aligned}
+        }
+    }
+    \li{
+        We want to show 
+        ##{
+            \pi_2 \circ (s,t) \circ m \circ (\theta \circ s, \operatorname{id}_{X_1}) = \pi_2 \circ (s,t) \circ m \circ (s_1 \circ f_1, \theta \circ t)
+        }
+        Now
+        ##{
+            \begin{aligned}
+                \pi_2 \circ (s,t) \circ m \circ (\theta \circ s, \operatorname{id}_{X_1}) &= t \circ \operatorname{id}_{X_1}\\
+                &= t\\
+                \pi_2 \circ (s,t) \circ m \circ (s_1 \circ f_1, \theta \circ t) &=t \circ \theta \circ t\\
+                &= \operatorname{id}_{X_0} \circ t\\
+                &=t\\
+            \end{aligned}
+        }
+    }
+}
