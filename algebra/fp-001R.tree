@@ -1,0 +1,120 @@
+\title{[Snake Lemma](fp-001U) using the [Salamander Lemma](fp-001I)}
+\taxon{proof}
+\author{felixpätsch}
+\date{2025-01-20}
+\import{base-macros}
+
+\p{Consider a completion of the diagram to the following [double complex](fp-001C):}
+
+\texfig{
+    \begin{tikzcd}
+        & {\operatorname{Ker} a} & {\operatorname{Ker} b} & {\operatorname{Ker} c} & 0 \\
+        {\operatorname{Ker} f} & A & B & C & 0 \\
+        0 & {A'} & {B'} & {C'} & {\operatorname{Coker} g'} \\
+        0 & {\operatorname{Coker} a} & {\operatorname{Coker} b} & {\operatorname{Coker} c}
+        \arrow[from=1-2, to=1-3]
+        \arrow[from=1-2, to=2-2]
+        \arrow[from=1-3, to=1-4]
+        \arrow[from=1-3, to=2-3]
+        \arrow[from=1-4, to=1-5]
+        \arrow[from=1-4, to=2-4]
+        \arrow[from=1-5, to=2-5]
+        \arrow[from=2-1, to=2-2]
+        \arrow[from=2-1, to=3-1]
+        \arrow["f", from=2-2, to=2-3]
+        \arrow["a", from=2-2, to=3-2]
+        \arrow["g", from=2-3, to=2-4]
+        \arrow["b", from=2-3, to=3-3]
+        \arrow[from=2-4, to=2-5]
+        \arrow["c", from=2-4, to=3-4]
+        \arrow[from=2-5, to=3-5]
+        \arrow[from=3-1, to=3-2]
+        \arrow[from=3-1, to=4-1]
+        \arrow["{f'}", from=3-2, to=3-3]
+        \arrow[from=3-2, to=4-2]
+        \arrow["{g'}", from=3-3, to=3-4]
+        \arrow[from=3-3, to=4-3]
+        \arrow[from=3-4, to=3-5]
+        \arrow[from=3-4, to=4-4]
+        \arrow[from=4-1, to=4-2]
+        \arrow[from=4-2, to=4-3]
+        \arrow[from=4-3, to=4-4]
+    \end{tikzcd}
+}
+
+\p{This is commutative, all columns are exact and the center two rows are exact. Additionally we easily see #{d^2 = 0} in all directions.}
+\p{
+    Zooming in at #{\operatorname{Ker} b} we have the diagram
+}
+
+\texfig{
+    \begin{tikzcd}
+        0 & 0 \\
+        {\operatorname{Ker}b} & {\operatorname{Ker}c} \\
+        B & C
+        \arrow[from=1-1, to=2-1]
+        \arrow[color={rgb,255:red,92;green,214;blue,92}, from=1-2, to=2-2]
+        \arrow[from=2-1, to=2-2]
+        \arrow[from=2-1, to=3-1]
+        \arrow[color={rgb,255:red,92;green,214;blue,92}, from=2-2, to=3-2]
+        \arrow[from=3-1, to=3-2]
+    \end{tikzcd}
+}
+
+\p{So we get an [intramural isomorphism](fp-001N) 
+
+    ##{^\square \operatorname{Ker} b \xrightarrow{\sim} \ker b_{hor}}
+    ##{^\square \operatorname{Ker} b = (\ker (\ker b \rightarrow \ker c) \cap \ker (\ker b \rightarrow B)) / \im (0 \rightarrow \ker a \rightarrow \ker b) = 0}
+
+    so the horizontal homology vanishes, i.e. the sequence is exact at #{\ker b}. Exactness at #{\coker b} follows analogously.
+}
+
+\p{Finally, to give the connecting homomorphism #{\ker c \rightarrow \coker a} is suffices to give isomorphisms
+    ##{
+        \coker(\ker b \rightarrow \ker c) \xrightarrow{\sim} (\ker c)_{hor} \xrightarrow{\sim} (\coker a)_{hor} \xrightarrow{\sim} \ker(\coker a \rightarrow \coker b)
+    }
+
+    The first and third isomorphisms are by definition. The second isomorphism can be constructed from the following [zig-zag:](todo)
+}
+
+\texfig{
+    \begin{tikzcd}
+        && {(\operatorname{Ker}c)_\square} \\
+        & {B_\square} & {^\square C} \\
+        {A'_\square} & {^\square B'} \\
+        {^\square(\operatorname{Coker}a)}
+        \arrow[from=1-3, to=2-3]
+        \arrow[from=2-2, to=2-3]
+        \arrow[from=2-2, to=3-2]
+        \arrow[from=3-1, to=3-2]
+        \arrow[from=3-1, to=4-1]
+    \end{tikzcd}
+}
+
+\p{
+    The maps are just the [extramural maps](fp-001G). These are all indeed [extramural isomorphisms](fp-001N), as at each object the complex is exact in the relevant direction. 
+    Now #{(\ker c)_{hor} \xrightarrow{\sim} (\ker c)_\square} by the [intramural isomorphism](fp-001N) looking at the following diagram:
+}
+
+\texfig{
+    \begin{tikzcd}
+        & 0 & 0 \\
+        {} & {\operatorname{Ker}c} & 0 & {} && {^\square A \xrightarrow{\sim} A_{ver}} \\
+        {} & C & 0 & {} && {A_{hor} \xrightarrow{\sim} A_{\square}} \\
+        & {} & {}
+        \arrow[from=1-2, to=2-2]
+        \arrow[color={rgb,255:red,92;green,214;blue,92}, from=1-3, to=2-3]
+        \arrow[from=2-1, to=2-2]
+        \arrow[from=2-2, to=2-3]
+        \arrow[from=2-2, to=3-2]
+        \arrow[no head, from=2-3, to=2-4]
+        \arrow[color={rgb,255:red,92;green,214;blue,92}, from=2-3, to=3-3]
+        \arrow[from=3-1, to=3-2]
+        \arrow[from=3-2, to=3-3]
+        \arrow[no head, from=3-2, to=4-2]
+        \arrow[no head, from=3-3, to=3-4]
+        \arrow[no head, from=3-3, to=4-3]
+    \end{tikzcd}
+}
+
+\p{Similarly #{^\square \coker a \xrightarrow{\sim} (\coker a)_{hor}}.}

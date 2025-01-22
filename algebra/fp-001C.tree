@@ -41,6 +41,11 @@
 
 \p{
     With #{p, q \in \Z} where all rows and columns are [complexes](). Note that any "partial" complex can be extended just by adding #{0}-objects and morphism.
+	We can also see a double complex as a [complex]() of (single) complexes.
+
+	They often arise from the application of [bifunctors.](todo)
 }
 
+\put\transclude/expanded{false}
 \transclude{fp-001D}
+\transclude{fp-001X}

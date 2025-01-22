@@ -1,0 +1,136 @@
+\title{Intramural isomorphisms}
+\taxon{lemma}
+\author{felixpätsch}
+\date{2025-01-20}
+\import{base-macros}
+
+\p{
+    In each of the following diagrams if the complex is exact along the green arrows (the row or column through #{B} perpendicular to #{A \rightarrow B}),
+    then we get the isomorphisms on the right.
+}
+
+\texfig{
+    \begin{tikzcd}
+        & {} & {} \\
+        0 & A & \bullet & {} && {^\square A \xrightarrow{\sim} A_{hor}} \\
+        0 & B & \bullet & {} && {A_{ver} \xrightarrow{\sim} A_{\square}} \\
+        & {} & {}
+        \arrow[from=1-2, to=2-2]
+        \arrow[from=1-3, to=2-3]
+        \arrow[from=2-1, to=2-2]
+        \arrow[from=2-2, to=2-3]
+        \arrow[from=2-2, to=3-2]
+        \arrow[no head, from=2-3, to=2-4]
+        \arrow[from=2-3, to=3-3]
+        \arrow[color={rgb,255:red,92;green,214;blue,92}, from=3-1, to=3-2]
+        \arrow[color={rgb,255:red,92;green,214;blue,92}, from=3-2, to=3-3]
+        \arrow[no head, from=3-2, to=4-2]
+        \arrow[no head, from=3-3, to=3-4]
+        \arrow[no head, from=3-3, to=4-3]
+    \end{tikzcd}
+}
+
+\texfig{
+    \begin{tikzcd}
+        & 0 & 0 \\
+        {} & A & B & {} && {^\square A \xrightarrow{\sim} A_{ver}} \\
+        {} & \bullet & \bullet & {} && {A_{hor} \xrightarrow{\sim} A_{\square}} \\
+        & {} & {}
+        \arrow[from=1-2, to=2-2]
+        \arrow[color={rgb,255:red,92;green,214;blue,92}, from=1-3, to=2-3]
+        \arrow[from=2-1, to=2-2]
+        \arrow[from=2-2, to=2-3]
+        \arrow[from=2-2, to=3-2]
+        \arrow[no head, from=2-3, to=2-4]
+        \arrow[color={rgb,255:red,92;green,214;blue,92}, from=2-3, to=3-3]
+        \arrow[from=3-1, to=3-2]
+        \arrow[from=3-2, to=3-3]
+        \arrow[no head, from=3-2, to=4-2]
+        \arrow[no head, from=3-3, to=3-4]
+        \arrow[no head, from=3-3, to=4-3]
+    \end{tikzcd}
+}
+
+\texfig{
+    \begin{tikzcd}
+        & {} & {} \\
+        {} & \bullet & B & 0 && {A_{hor} \xrightarrow{\sim} A_\square} \\
+        {} & \bullet & A & 0 && {^\square A \xrightarrow{\sim}A_{ver}} \\
+        & {} & {}
+        \arrow[from=1-2, to=2-2]
+        \arrow[from=1-3, to=2-3]
+        \arrow[from=2-1, to=2-2]
+        \arrow[color={rgb,255:red,92;green,214;blue,92}, from=2-2, to=2-3]
+        \arrow[from=2-2, to=3-2]
+        \arrow[color={rgb,255:red,92;green,214;blue,92}, from=2-3, to=2-4]
+        \arrow[from=2-3, to=3-3]
+        \arrow[from=3-1, to=3-2]
+        \arrow[from=3-2, to=3-3]
+        \arrow[no head, from=3-2, to=4-2]
+        \arrow[from=3-3, to=3-4]
+        \arrow[no head, from=3-3, to=4-3]
+    \end{tikzcd}
+}
+
+\texfig{
+    \begin{tikzcd}
+        & {} & {} \\
+        {} & \bullet & \bullet & {} && {A_{ver} \xrightarrow{\sim} A_\square} \\
+        {} & B & A & {} && {^\square A \xrightarrow{\sim}A_{hor}} \\
+        & {} & {}
+        \arrow[from=1-2, to=2-2]
+        \arrow[from=1-3, to=2-3]
+        \arrow[from=2-1, to=2-2]
+        \arrow[from=2-2, to=2-3]
+        \arrow[color={rgb,255:red,92;green,214;blue,92}, from=2-2, to=3-2]
+        \arrow[no head, from=2-3, to=2-4]
+        \arrow[from=2-3, to=3-3]
+        \arrow[from=3-1, to=3-2]
+        \arrow[from=3-2, to=3-3]
+        \arrow[color={rgb,255:red,92;green,214;blue,92}, from=3-2, to=4-2]
+        \arrow[no head, from=3-3, to=3-4]
+        \arrow[no head, from=3-3, to=4-3]
+    \end{tikzcd}
+}
+\p{
+    This is [Bergman, Cor. 2.2.](bergman-2012).
+}
+
+
+\proof{
+    \p{We spell out the proof of the first item:}
+
+    \p{
+        Consider the morphism #{0 \rightarrow B}. It is obviously exact at #{0} and we have exactness at #{B} by assumption.
+        By the [extramural isomorphism](fp-001M) we get 
+        #{
+             ^\square B \xrightarrow{\sim} 0_\square = 0
+        }. Apply the [salamander lemma](fp-001I) to the following shape:
+    }
+
+    \texfig{
+        \begin{tikzcd}
+            \bullet \\
+            0 & A \\
+            & B
+            \arrow[from=1-1, to=2-1]
+            \arrow[from=2-1, to=2-2]
+            \arrow[from=2-2, to=3-2]
+        \end{tikzcd}
+    }
+
+    \p{The corresponding long exact sequence end with:}
+    ##{
+        0_\square = 0 \rightarrow ^\square A \rightarrow A_{hor} \rightarrow 0 = ^\square B
+    }
+    \p{Giving us the desired isomorphism. For the other morphism, consider the salamander associated to:}
+    \texfig{
+        \begin{tikzcd}
+            0 & A \\
+            & B & \bullet
+            \arrow[from=1-1, to=1-2]
+            \arrow[from=1-2, to=2-2]
+            \arrow[from=2-2, to=2-3]
+        \end{tikzcd}
+    }
+}

@@ -1,0 +1,52 @@
+\title{Snake Lemma}
+\taxon{lemma}
+\author{felixpätsch}
+\date{2025-01-22}
+\import{base-macros}
+
+\p{Consider the following diagram in an [abelian category.](todo) If the inner two rows are exact, then the 
+the purple chain of morphisms is exact.}
+
+\texfig{
+    \begin{tikzcd}
+	& {\operatorname{Ker} a} & {\operatorname{Ker} b} & {\operatorname{Ker} c} \\
+	& A & B & C & 0 \\
+	0 & {A'} & {B'} & {C'} \\
+	& {\operatorname{Coker} a} & {\operatorname{Coker} b} & {\operatorname{Coker} c}
+	\arrow[color={rgb,255:red,153;green,92;blue,214}, from=1-2, to=1-3]
+	\arrow[color={rgb,255:red,140;green,140;blue,140}, from=1-2, to=2-2]
+	\arrow[color={rgb,255:red,153;green,92;blue,214}, from=1-3, to=1-4]
+	\arrow[color={rgb,255:red,140;green,140;blue,140}, from=1-3, to=2-3]
+	\arrow[color={rgb,255:red,140;green,140;blue,140}, from=1-4, to=2-4]
+	\arrow["d"{pos=.6}, color={rgb,255:red,153;green,92;blue,214}, bend left=25, from=1-4, to=4-2]
+	\arrow["f", from=2-2, to=2-3]
+	\arrow["a", from=2-2, to=3-2]
+	\arrow["g", from=2-3, to=2-4]
+	\arrow["b", from=2-3, to=3-3]
+	\arrow[from=2-4, to=2-5]
+	\arrow["c", from=2-4, to=3-4]
+	\arrow[from=3-1, to=3-2]
+	\arrow["{f'}", from=3-2, to=3-3]
+	\arrow[color={rgb,255:red,140;green,140;blue,140}, from=3-2, to=4-2]
+	\arrow["{g'}", from=3-3, to=3-4]
+	\arrow[color={rgb,255:red,140;green,140;blue,140}, from=3-3, to=4-3]
+	\arrow[color={rgb,255:red,140;green,140;blue,140}, from=3-4, to=4-4]
+	\arrow[color={rgb,255:red,153;green,92;blue,214}, from=4-2, to=4-3]
+	\arrow[color={rgb,255:red,153;green,92;blue,214}, from=4-3, to=4-4]
+\end{tikzcd}
+
+}
+
+\p{
+    If f is injective, so is #{\operatorname{Ker} a \rightarrow \operatorname{Ker} b}. If #{g'} is surjective, so is #{\operatorname{Coker b} \rightarrow \operatorname{Coker} c}.
+    The morpihsm #{\operatorname{Ker} c \rightarrow \operatorname{Coker} a} is also known as connecting homomorphism.
+}
+
+\put\transclude/expanded{false}
+\put\transclude/numbered{false}
+
+\proof{
+    \todo{Using diagram chasing}
+}
+
+\transclude{fp-001R}

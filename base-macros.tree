@@ -139,6 +139,7 @@
 \def\R{\mathbb{R}}
 \def\F{\mathbb{F}}
 \def\C{\mathbb{C}}
+\def\coker{\operatorname{Coker}}
 \def\ker{\operatorname{Ker}}
 \def\im{\operatorname{Im}}
 
@@ -152,4 +153,13 @@
 
 \def\br{
   \<html:br>{}
+}
+
+\def\todo[text]{
+  \<html:p>[style]{
+    padding: 1em;
+    background-color: rgba(170,0,150,.2)
+  }{
+    \<html:h3>{Todo:} 
+  \text}
 }

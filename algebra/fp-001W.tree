@@ -1,0 +1,15 @@
+\title{[Bergmans](bergman-2012) treatment of total homology of complexes}
+\author{felixpätsch}
+\date{2025-01-22}
+
+\p{
+    The follogwing is based on [Bergman 2012.](bergman-2012) 
+    We assume in the following that taking countable direct sums is always defined and exact in our [abelian category](todo) (or that each diagonal has only finitely many non-zero objects.)
+    In the paper this is generalized to a broader range of functors.
+}
+
+\put\transclude/expanded{false}
+\transclude{fp-000H}
+
+\put\transclude/expanded{true}
+\transclude{fp-001Z}

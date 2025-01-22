@@ -3,7 +3,7 @@
 \date{2025-01-19}
 \import{base-macros}
 
-\p{Each arrow #{r : A \rightarrow B} in a double complex induces an arrow #{A_\square \rightarrow ^\square B}. 
+\p{Each arrow #{r : A \rightarrow B} in a [double complex](fp-001C) [induces an arrow](fp-001E) #{A_\square \rightarrow ^\square B}. 
 We call this map the extramural map associated to #{f}.}
 
 \put\transclude/expanded{false}

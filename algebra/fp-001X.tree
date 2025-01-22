@@ -1,0 +1,11 @@
+\title{The (total) homology of a double complex}
+\author{felixpätsch}
+\date{2025-01-22}
+
+\put\transclude/numbered{false}
+\transclude{fp-000H}
+\transclude{fp-001Y}
+
+\put\transclude/numbered{true}
+\put\transclude/expanded{false}
+\transclude{fp-001W}

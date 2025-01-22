@@ -2,6 +2,14 @@
 \author{felixpätsch}
 \date{2025-01-19}
 
-\p{}
-
-\p{https://ncatlab.org/nlab/show/salamander+lemma}
+\p{We can use the [salamander lemma](fp-001I) to prove the [standard diagram chasing lemmas:](fp-001T)}
+\put\transclude/expanded{false}
+\ul{
+    \li{\transclude{fp-001O}}
+    \li{\transclude{fp-001P}}
+    \li{\transclude{fp-001Q}}
+    \li{\transclude{fp-001R}}
+}
+\p{
+    For more furough applications see [this exposition.](bergman-2012) 
+}

@@ -1,0 +1,15 @@
+\title{Diagram chasing lemmas}
+\author{felixpätsch}
+\date{2025-01-20}
+
+\put\transclude/numbered{false}
+\put\transclude/expanded{false}
+\ul{
+    \li{\transclude{fp-001I}}
+    \li{#{3\times 3} Lemma}
+    \li{#{n\times n} Lemma}
+    \li{Four Lemma}
+    \li{Five Lemma}
+    \li{\transclude{fp-001U}}
+    \li{Braid Lemma}
+}

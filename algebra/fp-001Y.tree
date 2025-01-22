@@ -1,0 +1,18 @@
+\title{Total (co)homology of a complex}
+\taxon{definition}
+\author{felixpätsch}
+\date{2025-01-22}
+
+\p{
+    Let #{C_{\bullet, \bullet}} be a [double complex](fp-001F). We define its total homology as:
+
+    ##{
+        \operatorname{H_n}(C_{\bullet, \bullet}) = \operatorname{H_n}(\operatorname{tot}(C_{\bullet, \bullet}))
+    }
+
+    where #{\operatorname{tot}(C_{\bullet, \bullet})} is the associated [total complex.](fp-000H) We similarly define the total cohomology (with values in #{\Z}) as
+
+    ##{
+        \operatorname{H^n}(C_{\bullet, \bullet}) = \operatorname{H^n}(\operatorname{tot}(C_{\bullet, \bullet})) = \operatorname{H_n}(\operatorname{Hom}(\operatorname{tot}(C_{\bullet, \bullet}), \Z))
+    }
+}

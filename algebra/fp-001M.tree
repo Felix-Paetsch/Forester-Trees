@@ -1,0 +1,11 @@
+\title{Extramural isomorphisms}
+\taxon{lemma}
+\author{felixpätsch}
+\date{2025-01-20}
+
+\p{If the rows of a [doubel complex](fp-001C) are exact at domain and codomain of #{A \rightarrow B}, i.e. #{A_{hor} = 0 = B_{hor}},
+then the [extramural map](fp-001G) #{A_\square \rightarrow ^\square B} is an isomorphism.}
+
+\p{
+    Similarly if we have a vertical morphism, and #{A_{ver} = 0 = B_{ver}} then #{A_\square \rightarrow ^\square B} is also an isomorphism.
+}

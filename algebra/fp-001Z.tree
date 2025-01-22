@@ -1,0 +1,27 @@
+\title{Maps associated to objects in the [total complex](fp-001C)}
+\taxon{definition}
+\author{felixpätsch}
+\import{base-macros}
+
+\date{2025-01-22}
+\p{
+    Denote for a [double complex](fp-001F) the objects of the [total complex](fp-000H) by:
+}
+
+##{
+    C_n \coloneqq \bigoplus_{p+q = n} C_p(X_q)
+}
+
+\p{
+    with boundary maps #{\delta_1, \delta_2}. Then we define
+}
+
+\ul{
+    \li{#{C_{n}^h = \ker (C_n \rightarrow C_{n+1}) / \im (C_{n-1} \rightarrow C_{n})}, the homology object at #{C_n}}
+    \li{#{C_{n \square} = \ker (\delta_1 \delta_2) / (\im \delta_1 + \im delta_2) = \bigoplus_i C_{i, n-1 \square}}, the donor at #{C_n}}
+    \li{#{^\square C_{n} = ( \ker \delta_1 \cap \ker \delta_2) / \im (\delta_1 \delta_2) = \bigoplus_i \phantom{\cdot}^\square C_{i, n-1}}, the receptor at #{C_n}}
+}
+
+\p{The identity morphism induces #{C_{n \square} \rightarrow C_{n}^h \rightarrow ^\square C_{n}}. Lastly we get two maps:}
+
+##{}

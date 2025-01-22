@@ -13,7 +13,7 @@
 }
 
 \p{
-  Thinking of a [groupoid]() as a category in which each morphism is an isomorphism, we get that a #{2}-isomorphism #{\theta : f \Rightarrow  g} between #{f,g : X_\bullet \rightarrow Y_\bullet} is just a [natural transformation]() #{\theta : f \Rightarrow  g}
+  Thinking of a [groupoid](fp-000R) as a category in which each morphism is an isomorphism, we get that a #{2}-isomorphism #{\theta : f \Rightarrow  g} between #{f,g : X_\bullet \rightarrow Y_\bullet} is just a [natural transformation]() #{\theta : f \Rightarrow  g}
 
 \texfig{
   \begin{tikzcd}

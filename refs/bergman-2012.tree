@@ -2,6 +2,8 @@
 \author{George M. Bergman}
 \taxon{reference}
 \date{2012}
+\import{base-macros}
+
 \meta{bibtex}\verb<<<|
 @article{bergman2012diagram,
   title={On diagram-chasing in double complexes},
@@ -16,3 +18,5 @@
   primaryClass={math.CT},
   url={https://arxiv.org/abs/1108.0958}
 }<<<
+
+\todo{Exposition, similar to [here](fp-001D), but for all relevant sections of the paper.}

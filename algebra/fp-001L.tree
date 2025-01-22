@@ -1,1 +1,10 @@
+\title{Intramural and extramural isomorphisms}
+\author{felixpätsch}
+\import{base-macros}
+
 \date{2025-01-20}
+
+\p{As a direct consequence of the [salamander lemma](fp-001I) we get the following corollaries:}
+
+\transclude{fp-001M}
+\transclude{fp-001N}
