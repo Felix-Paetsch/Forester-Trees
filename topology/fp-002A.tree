@@ -1,0 +1,10 @@
+\title{Singular cohomology}
+\author{felixpätsch}
+\date{2025-01-23}
+
+\p{
+    Singular cohomology is the dual theory of [singular homology](fp-0028).
+    It satisfies the [Eilenberg-Steenrod axioms for cohomology]() and hence is [an ordinary cohomology theory.]()
+}
+
+\transclude{fp-002B}

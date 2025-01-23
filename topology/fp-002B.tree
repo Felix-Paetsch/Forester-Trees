@@ -1,0 +1,20 @@
+\title{Singular cohomology}
+\taxon{definition}
+\author{felixpätsch}
+\date{2025-01-23}
+\import{base-macros}
+
+
+\p{Let #{X} be a topological space, we define its singular cohomology as}
+##{H^n(X) \coloneqq H^n(\operatorname{Hom}(C_n(X), \Z)).}
+
+\p{
+    Where #{C_n(X) = \bigoplus_{\{\sigma : \Delta_n \rightarrow X\}} \Z[\sigma] } is the same as in the [singular homology construction.](fp-0029)
+    Elements of #{C^n \coloneqq \operatorname{Hom}(C_n(X), \Z), \im (C^{n-1} \rightarrow C^{n}), \ker (C^{n} \rightarrow C^{n+1})} are called cochains, coboundaries and cocycles respectively.
+}
+
+
+
+\p{One can also define singular cohomology with values in an abitrary group or ring:}
+
+##{H^n(X; G) \coloneqq H^n(\operatorname{Hom}(C_n(X), G)).}

@@ -1,0 +1,16 @@
+\title{Singular (co)homology}
+\author{felixpätsch}
+\import{base-macros}
+
+\date{2025-01-23}
+\p{
+    Singular homology (for topological spaces) is an (ordinary) [(co)homology theory]() in #{\mathbf{Top}}, meaning it
+    satisfies all [Eilenberg-Steenrod axioms](). It has a dual theory, also discussed below.
+}
+\p{
+    It is often the easiest homology theory to prove things with, but is hard to compute without using identification with [other theories.]()
+}
+
+\transclude{fp-0029}
+\transclude{fp-002A}
+\todo{Proove Eilenberg-Steenrod axioms, incorporate topo 2}
