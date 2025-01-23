@@ -1,0 +1,54 @@
+\taxon{lemma}
+\author{felixpätsch}
+\date{2025-01-23}
+\import{base-macros}
+
+
+\p{
+    Suppose #{A} is an object in a [double complex](fp-001C) and the nearby [donor and receptor objects](fp-001E) indicated in one of the diagrams below are zero:   
+}
+
+\texfig{
+    \begin{tikzcd}
+        & {\bullet_\square} &&&& \bullet \\
+        \bullet & A & {^\square\bullet} && {\bullet_\square} & A & \bullet \\
+        & \bullet &&&& {^\square\bullet}
+        \arrow[from=1-2, to=2-2]
+        \arrow[from=1-6, to=2-6]
+        \arrow[from=2-1, to=2-2]
+        \arrow[from=2-2, to=2-3]
+        \arrow[from=2-2, to=3-2]
+        \arrow[from=2-5, to=2-6]
+        \arrow[from=2-6, to=2-7]
+        \arrow[from=2-6, to=3-6]
+    \end{tikzcd}
+}
+
+\p{Then we get in the first case isomrphisms:}
+
+##{
+    \begin{aligned}
+        ^\square A &\cong A_{ver} \\
+        A_{hor} &\cong A_\square
+    \end{aligned}
+}
+
+\p{Or in the second case the isomrphisms:}
+
+##{
+    \begin{aligned}
+        ^\square A &\cong A_{hor} \\
+        A_{ver} &\cong A_\square
+    \end{aligned}
+}
+
+\put\transclude/expanded{false}
+\proof{
+    \p{
+        Apply the salamander lemma for each case on the arrow between #{A} and one of the objects bearing donor/receptor symbols.
+    }
+    \p{ For the downward arrow on the left for example we get the exact sequence}
+    ##{\bullet_\square \rightarrow \bullet_{ver} \rightarrow \bullet_\square = 0 \rightarrow ^\square A \rightarrow A_{ver} \rightarrow ^\square \bullet = 0}
+}
+\put\transclude/expanded{true}
+

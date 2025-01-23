@@ -46,6 +46,18 @@
  }
 }
 
+\def\hproof[body]{
+ \scope{
+   \put\transclude/toc{false}
+   \put\transclude/expanded{false}
+   \subtree{
+     \taxon{proof}
+     \body
+   }
+   \put\transclude/expanded{true}
+ }
+}
+
 \def\lemma[body]{
  \scope{
    \put\transclude/toc{false}
@@ -161,5 +173,14 @@
     background-color: rgba(170,0,150,.2)
   }{
     \<html:h3>{Todo:} 
+  \text}
+}
+
+\def\devNote[text]{
+  \<html:p>[style]{
+    padding: 1em;
+    background-color: #D7BFAD
+  }{
+    \<html:h3>{DevNote:} 
   \text}
 }

@@ -1,4 +1,4 @@
-\title{On diagram-chasing in double complexes}
+\title{On diagram-chasing in [double complexes](fp-001C)}
 \author{George M. Bergman}
 \taxon{reference}
 \date{2012}
@@ -19,4 +19,8 @@
   url={https://arxiv.org/abs/1108.0958}
 }<<<
 
-\todo{Exposition, similar to [here](fp-001D), but for all relevant sections of the paper.}
+\transclude{fp-001D}
+\transclude{fp-0025}
+\transclude{fp-001W}
+
+\devNote{The paper offers a lot more results which haven't found their way to this place.}

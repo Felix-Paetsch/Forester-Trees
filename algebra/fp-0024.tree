@@ -1,0 +1,26 @@
+\title{Exact sequence for homology of double complexes with exact columns}
+\taxon{lemma}
+\author{felixpätsch}
+\date{2025-01-23}
+\import{base-macros}
+
+\p{
+    Let #{C_{\bullet, \bullet}} be a [double complex](fp-001C) with exact columns.
+    Then we have the following long exact sequence:
+}
+
+\texfig{
+    $\dots \xrightarrow{\bar{\delta}} ^\square C_n \rightarrow C_n^h \rightarrow C_{n \square} \xrightarrow{\bar{\delta}} ^\square C_{n+1} \rightarrow \dots$
+}
+
+\hproof{
+    \p{ 
+        We assume #{\delta_1} is the column boundary map. Consider the complex in the proof of [this lemma.](fp-0021)
+        We have 
+        
+        ##{C_{n, ver} = \ker (C_{n} \xrightarrow{\delta_1} C_{n+1}) / \im (C_{n-1} \xrightarrow{\delta_1} C_{n}) = 0}
+        
+        as the columns are exact by assumtion.
+        Hence the lemma applies and we get a long exact sequence involving #{C_{n, hor}}. As also seen in the proof of that lemma we have #{C_{n, hor} = C_n^h} and win.
+    }
+}

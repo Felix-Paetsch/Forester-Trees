@@ -1,0 +1,24 @@
+\taxon{lemma}
+\author{felixpätsch}
+\date{2025-01-23}
+\import{base-macros}
+
+\p{
+    If in a [double complex](fp-001C) the vertial homologies are all zero (more generally the [intramural map](fp-001E) from receptor to donor) is zero for (any number of) consecutive objects
+}
+
+##{\dots \rightarrow A \rightarrow B \rightarrow \dots}
+
+\p{
+    then the following sequence of horizontal homology objects, donors and receptors with intramural and extramural maps is exact:
+}
+
+##{
+    \dots \rightarrow ^\square A \rightarrow A_{hor} \rightarrow A_\square \rightarrow ^\square B \rightarrow B_{hor} \rightarrow B_\square \rightarrow \dots
+}
+
+\p{If the horizontal homologies are zero and the object live in a column we get the same result with #{\bullet_{hor}} replaced by #{\bullet_{ver}}.}
+
+\hproof{
+    \p{Glue together the sequences from [this lemma.](fp-0026)}
+}

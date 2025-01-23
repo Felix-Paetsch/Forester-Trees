@@ -1,0 +1,8 @@
+\title{Long exact sequences in [double complexes](fp-001C)}
+\author{felixpätsch}
+\date{2025-01-23}
+
+\p{We link together the sequences from the [salamander lemma](fp-001I) under weak assumptions to long exact sequences:}
+
+\transclude{fp-0026}
+\transclude{fp-0027}

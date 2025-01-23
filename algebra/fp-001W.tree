@@ -4,12 +4,12 @@
 \import{base-macros}
 
 \p{
-    The follogwing is based on [Bergman 2012.](bergman-2012) 
-    We assume in the following that taking countable direct sums is always defined and exact in our [abelian category](todo) (or that each diagonal has only finitely many non-zero objects.)
+    The following is based on [Bergman 2012.](bergman-2012) 
+    We assume that taking countable direct sums is always defined and exact in our [abelian category](todo) (or that each diagonal has only finitely many non-zero objects.)
     In the paper this is generalized to a broader range of functors.
 }
 
 \transclude{fp-001Z}
 \transclude{fp-0020}
 \transclude{fp-0021}
-\todo{Transcribe and understand more of the presented lemmas}
+\transclude{fp-0023}
