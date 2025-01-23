@@ -1,6 +1,7 @@
 \title{[Bergmans](bergman-2012) treatment of total homology of complexes}
 \author{felixpätsch}
 \date{2025-01-22}
+\import{base-macros}
 
 \p{
     The follogwing is based on [Bergman 2012.](bergman-2012) 
@@ -8,8 +9,7 @@
     In the paper this is generalized to a broader range of functors.
 }
 
-\put\transclude/expanded{false}
-\transclude{fp-000H}
-
-\put\transclude/expanded{true}
 \transclude{fp-001Z}
+\transclude{fp-0020}
+\transclude{fp-0021}
+\todo{Transcribe and understand more of the presented lemmas}

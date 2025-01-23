@@ -2,18 +2,33 @@
 \taxon{definition}
 \author{felixpätsch}
 \date{2025-01-17}
+\import{base-macros}
 
 \p{
-    Given a [double complex](fp-001C) #{C_{\bullet, \bullet}} the total complex #{\operatorname{tot}(C_{\bullet,\bullet})} is given by
+    Given a [double complex](fp-001C) #{C_{\bullet, \bullet}} with the convention that indices decrease and boundary map #{\delta_p} going in the direction of changing #{p} and #{\delta_q} in that of changing #{p}. Then the total complex #{\operatorname{tot}(C_{\bullet,\bullet})} is given by
     ##{
-        C_n \coloneqq \bigoplus_{p+q = n} C_p(X_q)
+        C_n \coloneqq \bigoplus_{p+q = n} C_{p,q}
     }
     and the boundary map #{\delta} by
     ##{
         \begin{aligned}
-            \delta_n : C_{n+1} &\rightarrow C_n \\
-            C_p(X_q) \ni \gamma &\mapsto (-1)^{p}\partial(\gamma) + d(\gamma)
+            \delta_{n} = (-1)^{q}\delta_p + \delta_q : C_{n+1} &\rightarrow C_n \\
         \end{aligned}
     }
-    This #{\delta} then satisfies #{\delta^2 = 0}, so we get indeed a complex.
+    Where for each summand the correct #{p} and #{q} are to be chosen. This #{\delta} then satisfies #{\delta^2 = 0}, so we get indeed a complex.
+
+    Note that many other conventions of defining #{\delta} are possible. We only need an [odd number of minus signs](https://math.stackexchange.com/questions/3147787/sign-convention-for-total-complex) in each square to get an isomporphic theory.
+}
+
+\proof{
+    \p{For each summand #{C_p,q} of #{C_n} evaluated on that summand (i.e. after inclusion) we get:}
+    ##{
+        \begin{aligned}
+            \delta^2 &= \delta \circ ((-1)^q \delta_p + \delta_q) \\
+                     &= \delta \circ (-1)^q \delta_p + \delta \circ \delta_q \\
+                     &= ((-1)^{q} \delta_p + \delta_q) \circ (-1)^q \delta_p + ((-1)^{q-1} \delta_p + \delta_q) \circ \delta_q \\
+                     &= (-1)^q (-1)^q \delta_p^2 + (-1)^q \delta_q \circ \delta_p + (-1)^{q-1} \delta_p \circ \delta_q + \delta_q \circ \delta_q \\
+                     &= 0
+         \end{aligned}
+    }
 }

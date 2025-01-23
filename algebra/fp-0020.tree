@@ -1,0 +1,37 @@
+\title{Elementary observations}
+\author{felixpätsch}
+
+\date{2025-01-23}
+\import{base-macros}
+
+\p{
+    We have
+}
+
+##{C_{n-1, \square} \xrightarrow{\bar{\delta}} ^\square C_n \rightarrow C_n^h}
+
+\p{
+    Is #{0}, hence
+}
+
+\texfig{
+    $C_{n-1, \square} \xrightarrow{\bar{\delta_1}, \bar{\delta_2}} ^\square C_n \rightarrow C_n^h$
+}
+
+\p{agree up to sign. So below we only look at composits involving #{\delta_1} and the corresponding result follows.}
+
+\put\transclude/expanded{false}
+\proof{
+    ##{
+        \im ({C_{n-1, \square} \xrightarrow{\bar{\delta}} ^\square C_n \rightarrow C_n^h}) \subset \im (C_{n-1} \xrightarrow{\delta} C_n \rightarrow C_n^h) = 0
+    }
+}
+\put\transclude/expanded{true}
+
+\p{Similarly we get}
+
+\texfig{
+    $C_n^h \rightarrow C_{n, \square} \xrightarrow{\bar{\delta_1}, \bar{\delta_2}} ^\square C{n+1}$
+}
+
+\p{agree up to sign.}
