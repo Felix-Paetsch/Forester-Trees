@@ -1,0 +1,6 @@
+\title{Topological groupoid}
+\taxon{definition}
+\author{felixpätsch}
+\date{2025-01-24}
+
+\p{A topological groupoid is a [groupoid obejct](fp-000Q) of #{\mathbf{Top}}.}

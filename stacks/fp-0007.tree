@@ -4,7 +4,7 @@
 
 \import{base-macros}
 
-\p{Let #{\mathfrak{X}} be a [topological stack](fp-0005) [presented by]() the [topological groupoid]() #{G_x \coloneqq [X_1 \rightrightarrows X_0]} and #{\Delta_n} presented by #{[\Delta_n \rightrightarrows \Delta_n]}. Then #{G_x \rightarrow \Delta_n} is given by}
+\p{Let #{\mathfrak{X}} be a [topological stack](fp-0005) [presented by]() the [topological groupoid](fp-002H) #{G_x \coloneqq [X_1 \rightrightarrows X_0]} and #{\Delta_n} presented by #{[\Delta_n \rightrightarrows \Delta_n]}. Then #{G_x \rightarrow \Delta_n} is given by}
 
 \texfig{
   \begin{tikzcd}
@@ -19,7 +19,7 @@
 
 \p{such that this diagram commutes for either #{s} or #{t}. So it is defined by #{\Delta_n \rightarrow X_0}.}
 
-\p{Consider a group #{G} presented by #{[G \rightrightarrows \ast]}. Then we only get one map #{\Delta_n \rightarrow G}. Recalling the notion of [#{2}-isomorphism]() of [groupoid morphisms](), we see that this map has #{|G|} automorphisms. As both of this data don't depend on #{n} (or even on the group structure) we can't create a reasonable [(co)homology theory]() this way.}
+\p{Consider a group #{G} presented by #{[G \rightrightarrows \ast]}. Then we only get one map #{\Delta_n \rightarrow G}. Recalling the notion of [#{2}-isomorphism](fp-0008) of [groupoid morphisms](fp-000S), we see that this map has #{|G|} automorphisms. As both of this data don't depend on #{n} (or even on the group structure) we can't create a reasonable [(co)homology theory]() this way.}
 
 
 \put\transclude/expanded{false}

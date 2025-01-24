@@ -1,4 +1,4 @@
-\title{[Groupoid cohomology via simplicial nerve](fp-000F) is [functorial]()}
+\title{[Groupoid cohomology via simplicial nerve](fp-000F) is functorial}
 \taxon{lemma}
 \author{felixpätsch}
 \date{2025-01-17}
@@ -36,4 +36,4 @@
     \end{tikzcd}
 }
 
-\p{Where the outer maps agree on #{Y_0} as #{f} is a [groupoid morphism](fp-000S). This by construction is [functorial]().}
+\p{Where the outer maps agree on #{Y_0} as #{f} is a [groupoid morphism](fp-000S). This by construction is functorial.}
