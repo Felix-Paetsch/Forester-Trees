@@ -1,0 +1,9 @@
+\title{Expositions in branches of algebra}
+\author{felixpätsch}
+\date{2025-01-24}
+
+\put\transclude/expanded{false}
+\put\transclude/toc{false}
+
+\transclude{fp-002F}
+\transclude{fp-002V}

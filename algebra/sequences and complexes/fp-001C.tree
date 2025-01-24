@@ -1,7 +1,7 @@
 \title{Double (chain) complex}
 \taxon{definition}
 \author{felixpätsch}
-\date{2025-01-19}
+\date{2025-01-24}
 \import{base-macros}
 
 \p{Let #{\mathcal{A}} be an [abelian category](). A double complex in #{\mathcal{A}} is a commutative [diagram]() #{C_{\bullet, \bullet}} of the form}
@@ -43,9 +43,5 @@
     With #{p, q \in \Z} where all rows and columns are [complexes](). Note that any "partial" complex can be extended just by adding #{0}-objects and morphism.
 	We can also see a double complex as a [complex]() of (single) complexes.
 
-	They often arise from the application of [bifunctors.](todo)
+	They often arise from the application of [bifunctors.](todo) See [here](fp-002V) for an exposition.
 }
-
-\put\transclude/expanded{false}
-\transclude{fp-001D}
-\transclude{fp-001X}

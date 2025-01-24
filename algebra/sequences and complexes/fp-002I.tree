@@ -1,0 +1,15 @@
+\title{Abelian category}
+\taxon{definition}
+\author{felixpätsch}
+\date{2025-01-24}
+
+\p{A category #{\mathscr{C}} is abelian if:}
+\ul{
+    \li{It has a [zero object](fp-002J)}
+    \li{It has [finite sums](fp-002K) agreeing with [finite products](fp-002L)}
+    \li{It has [kernels](fp-002M) and [cokernels](fp-002N)}
+    \li{All monomorphisms and epimorphisms are [normal](fp-002O)}
+}
+
+\put\transclude/expanded{false}
+\transclude{fp-002P}

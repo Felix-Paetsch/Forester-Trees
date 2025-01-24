@@ -1,0 +1,19 @@
+\title{Coproduct (or sum)}
+\taxon{definition}
+\author{felixpätsch}
+\date{2025-01-24}
+\import{base-macros}
+
+\p{
+    Let #{A,B} objects of a category #{\mathscr{C}}. Then their coproduct #{A \coprod B} (if it exists) is the [colimit]() in the following diagram:
+}
+
+\texfig{
+    \begin{tikzcd}
+        {A \coprod B} & B \\
+        A
+        \arrow[color={rgb,255:red,92;green,214;blue,214}, from=1-1, to=1-2]
+        \arrow[color={rgb,255:red,92;green,214;blue,214}, from=1-1, to=2-1]
+    \end{tikzcd}
+}
+

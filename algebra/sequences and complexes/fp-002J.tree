@@ -1,0 +1,10 @@
+\title{Zero object}
+\taxon{definition}
+\author{felixpätsch}
+\date{2025-01-24}
+
+\p{
+    Let #{\mathscr{C}} be a category. An object #{* \in \operatorname{ob} \mathscr{C}} is called zero object
+    if it is both [initial]() and [final](), i.e. #{|\operatorname{Hom}(A,*)| = |\operatorname{Hom}(*,A)| = 1} for all #{A \in \mathscr{C}}.
+    It is unique up to unique iso.
+}

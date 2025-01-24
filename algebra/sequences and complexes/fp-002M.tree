@@ -1,0 +1,19 @@
+\title{Kernel}
+\taxon{definition}
+\author{felixpätsch}
+\date{2025-01-24}
+\import{base-macros}
+
+\p{
+    Let #{A \xrightarrow{f} B} be objects of a category #{\mathscr{C}} with [zero object #{*}](fp-002J). Then #{\ker f} is the [pullback]() of #{f} along #{0}, i.e. the limit of
+}
+
+\texfig{
+    \begin{tikzcd}
+        A && 0 \\
+        & B
+        \arrow["f", from=1-1, to=2-2]
+        \arrow[from=1-3, to=2-2]
+    \end{tikzcd}
+}
+

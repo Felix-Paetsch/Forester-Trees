@@ -1,0 +1,18 @@
+\title{Product}
+\taxon{definition}
+\author{felixpätsch}
+\date{2025-01-24}
+\import{base-macros}
+
+\p{
+    Let #{A,B} objects of a category #{\mathscr{C}}. Then their product #{A \prod B} (if it exists) is the [limit]() in the following diagram:
+}
+
+\texfig{
+    \begin{tikzcd}
+        {A \prod B} & B \\
+        A
+        \arrow[color={rgb,255:red,92;green,214;blue,214}, from=1-2, to=1-1]
+        \arrow[color={rgb,255:red,92;green,214;blue,214}, from=2-1, to=1-1]
+    \end{tikzcd}
+}

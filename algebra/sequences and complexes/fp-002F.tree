@@ -1,8 +1,10 @@
-\title{Double dualization of abelian categories to get results with reversed arrows}
+\title{Dualization of abelian categories to get results with reversed arrows}
 \author{felixpätsch}
 \date{2025-01-24}
 \import{base-macros}
 
-\todo{See for example [here.](fp-000N) There should be an easy analog of [this lemma.](fp-002D)}
-
+\transclude{fp-002I}
+\transclude{fp-002Q}
+\transclude{fp-002R}
+\transclude{fp-002S}
 \transclude{fp-002G}

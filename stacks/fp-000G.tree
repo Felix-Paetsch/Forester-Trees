@@ -4,7 +4,7 @@
 \import{base-macros}
 
 
-\p{Let #{[X_1 \rightrightarrows X_0]} be a [groupoid](fp-000Q) in a category with fiber products. We can construct its [simplicial nerve]() as
+\p{Let #{[X_1 \rightrightarrows X_0]} be a [groupoid](fp-000Q) in a category with fiber products. We can construct its simplicial nerve as
 \texfig{
     \begin{tikzcd}
         \dots & {X_3} & {X_2} & {X_1} & {X_0} \\
