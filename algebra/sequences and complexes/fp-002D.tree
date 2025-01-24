@@ -1,0 +1,91 @@
+\title{Repeating columns in a quadrant II}
+\taxon{lemma}
+\author{felixpätsch}
+\date{2025-01-24}
+\import{base-macros}
+
+\p{
+    Let #{C_{\bullet, \bullet}} be a [double complex](fp-001C) of the shape
+}
+
+\texfig{
+    \begin{tikzcd}
+        \dots & {D_0} & {D_0} & {D_0} & {D_0} \\
+        \dots & {D_1} & {D_1} & {D_1} & {D_1} \\
+        \dots & {D_2} & {D_2} & {D_2} & {D_2} \\
+        & \dots & \dots & \dots & \dots
+        \arrow[from=1-1, to=1-2]
+        \arrow["0", from=1-2, to=1-3]
+        \arrow["{\operatorname{id}}", from=1-3, to=1-4]
+        \arrow["0", from=1-4, to=1-5]
+        \arrow[from=2-1, to=2-2]
+        \arrow[from=2-2, to=1-2]
+        \arrow["0", from=2-2, to=2-3]
+        \arrow[from=2-3, to=1-3]
+        \arrow["{\operatorname{id}}", from=2-3, to=2-4]
+        \arrow[from=2-4, to=1-4]
+        \arrow["0", from=2-4, to=2-5]
+        \arrow[from=2-5, to=1-5]
+        \arrow[from=3-1, to=3-2]
+        \arrow[from=3-2, to=2-2]
+        \arrow["0", from=3-2, to=3-3]
+        \arrow[from=3-3, to=2-3]
+        \arrow["{\operatorname{id}}", from=3-3, to=3-4]
+        \arrow[from=3-4, to=2-4]
+        \arrow["0", from=3-4, to=3-5]
+        \arrow[from=3-5, to=2-5]
+        \arrow[from=4-2, to=3-2]
+        \arrow[from=4-3, to=3-3]
+        \arrow[from=4-4, to=3-4]
+        \arrow[from=4-5, to=3-5]
+    \end{tikzcd}
+}
+
+\p{
+    Then the [total homology](fp-000H) of the complex agrees with the homology of #{D_\bullet} (functorially.)
+}
+
+\hproof{
+    \p{We prove this by direct computation. Let}
+    ##{C_n \coloneqq \bigoplus_{i=0}^n D_i.}
+    \p{Denote the boundary maps upwards by #{\delta_1} and sideways by #{\delta_2}.
+    We [may assume]() that we work in a category of modules over a ring.}
+    \p{First consider the case #{n} even. Then}
+    ##{
+        \begin{aligned}
+            C_n \ni &(d_0, d_1, \dots, d_n) \in \ker (C_n \rightarrow C_{n-1}) \\
+             \iff &(d_0 + \delta_1(d_1), \delta_1(d_2), d_2 + \delta_1(d_3), \dots, \delta_1(d_n)) = (0, \dots, 0)
+        \end{aligned}
+    }
+
+    \p{As the last term in the image only depends on #{d_n} and is the only one depending on it, we get}
+    ##{\ker (C_n \rightarrow C_{n-1}) = \ker \left(\bigoplus_{i=0}^{i < n} D_i \rightarrow \bigoplus_{i=0}^{i < n - 1} D_{i} \right) \oplus \ker (D_n \rightarrow D_{n-1})}
+
+    \p{For the image we get}
+    ##{
+        \begin{aligned}
+            \im (C_{n+1} \rightarrow C_{n}) &= \{(\delta_1(e_1), e_1 + \delta_1(e_2), \delta_1(e_3), \dots, \delta_1(e_{n+1})) | (e_0, e_1, \dots e_{n+1}) \in C_{n+1}\} \\
+                                            &= \im \left(\bigoplus_{i=0}^{i < n+1} D_i \rightarrow \bigoplus_{i=0}^{i < n} D_{i} \right) \oplus \im (D_{n+1} \rightarrow D_{n})
+        \end{aligned}
+    }
+
+    \p{So}
+
+    ##{
+        \begin{aligned}
+            H_n(\operatorname{tot}(C_{\bullet, \bullet})) &= H_n(C_\bullet) = \ker (C_n \rightarrow C_{n-1}) / \im (C_{n+1} \rightarrow C_{n}) \\
+            &= \ker \left(\bigoplus_{i=0}^{i < n} D_i \rightarrow \bigoplus_{i=0}^{i < n - 1} D_{i} \right) \oplus \ker (D_n \rightarrow D_{n-1}) / \im \left(\bigoplus_{i=0}^{i < n+1} D_i \rightarrow \bigoplus_{i=0}^{i < n} D_{i} \right) \oplus \im (D_{n+1} \rightarrow D_{n}) \\
+            &= \left(\ker \left(\bigoplus_{i=0}^{i < n} D_i \rightarrow \bigoplus_{i=0}^{i < n - 1} D_{i} \right) / \im \left(\bigoplus_{i=0}^{i < n+1} D_i \rightarrow \bigoplus_{i=0}^{i < n} D_{i} \right) \right) \oplus \left(\ker (D_n \rightarrow D_{n-1}) / \im (D_{n+1} \rightarrow D_{n}) \right) \\
+            &= \left(\ker \left(\bigoplus_{i=0}^{i < n} D_i \rightarrow \bigoplus_{i=0}^{i < n - 1} D_{i} \right) / \im \left(\bigoplus_{i=0}^{i < n+1} D_i \rightarrow \bigoplus_{i=0}^{i < n} D_{i} \right) \right) \oplus H_n(D_\bullet)
+    
+        \end{aligned}
+    }
+
+    \p{So it suffices to show}
+    ##{\ker \left(\bigoplus_{i=0}^{i < n} D_i \rightarrow \bigoplus_{i=0}^{i < n - 1} D_{i} \right) / \im \left(\bigoplus_{i=0}^{i < n+1} D_i \rightarrow \bigoplus_{i=0}^{i < n} D_{i} \right) = 0}
+    \p{But this holds as it is just #{H_{n-1}} of the total complex in [this lemma.](fp-002E)}
+
+    \p{For odd #{n} #{\ker} and #{\im} split similarly which then gives the result.}
+
+    \p{The identification is functorial in the sense that a [chain map]() #{D_\bullet \rightarrow E_\bullet} induces maps for the corresponding double complexes as in the lemma and the induced maps on homology commute with the isomorphisms.}
+}

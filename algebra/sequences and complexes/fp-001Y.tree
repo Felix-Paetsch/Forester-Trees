@@ -10,9 +10,6 @@
         \operatorname{H_n}(C_{\bullet, \bullet}) = \operatorname{H_n}(\operatorname{tot}(C_{\bullet, \bullet}))
     }
 
-    where #{\operatorname{tot}(C_{\bullet, \bullet})} is the associated [total complex.](fp-000H) We similarly define the total cohomology (with values in #{\Z}) as
-
-    ##{
-        \operatorname{H^n}(C_{\bullet, \bullet}) = \operatorname{H^n}(\operatorname{tot}(C_{\bullet, \bullet})) = \operatorname{H_n}(\operatorname{Hom}(\operatorname{tot}(C_{\bullet, \bullet}), \Z))
-    }
+    where #{\operatorname{tot}(C_{\bullet, \bullet})} is the associated [total complex.](fp-000H)
+    When the indices are increasing with the arrows, then instead we call it the total cohomology and denote it by #{\operatorname{H^n}(C_{\bullet, \bullet}).}
 }

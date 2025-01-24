@@ -1,0 +1,12 @@
+\title{Basic Lemmas}
+\author{felixpätsch}
+
+\date{2025-01-24}
+\transclude{fp-002E}
+\transclude{fp-002D}
+
+\p{To get results with all arrows reversed also consider this exposition:}
+\put\transclude/expanded{false}
+\transclude{fp-002F}
+\put\transclude/expanded{true}
+

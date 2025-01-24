@@ -2,3 +2,61 @@
 \taxon{lemma}
 \author{felixpätsch}
 \date{2025-01-17}
+\import{base-macros}
+
+\p{
+    Let #{X} be an object of the category #{\mathcal{C}}. Then viewing #{X} as a [groupoid over #{\mathcal{C}}](fp-000Q) and computing
+    the singular (co)homology using [Behrends construction](fp-000F) gives the same result as computing it directly in #{\mathcal{C}}.
+}
+
+\proof{
+    \p{Let #{G \coloneqq [X\rightrightarrows X]} be the canonical [groupoid object](fp-000Q) presenting #{X}.
+    Then the [simplicial nerve](fp-000G) of #{G} is just}
+    \texfig{
+    \begin{tikzcd}
+        \dots & {X} & {X} & {X} & {X}
+        \arrow[from=1-1, to=1-2, shift left=2, -{Stealth}]
+        \arrow[from=1-1, to=1-2, shift left=1, -{Stealth}]
+        \arrow[from=1-1, to=1-2, -{Stealth}]
+        \arrow[from=1-1, to=1-2, shift right=1, -{Stealth}]
+        \arrow[from=1-1, to=1-2, shift right=2, -{Stealth}]
+        \arrow[from=1-2, to=1-3, shift left=1.5, -{Stealth}]
+        \arrow[from=1-2, to=1-3, shift left=.5, -{Stealth}]
+        \arrow[from=1-2, to=1-3, shift right=.5, -{Stealth}]
+        \arrow[from=1-2, to=1-3, shift right=1.5, -{Stealth}]
+        \arrow[from=1-3, to=1-4, shift left=1, -{Stealth}]
+        \arrow[from=1-3, to=1-4, -{Stealth}]
+        \arrow[from=1-3, to=1-4, shift right=1, -{Stealth}]
+        \arrow[from=1-4, to=1-5, shift left=.5, -{Stealth}]
+        \arrow[from=1-4, to=1-5, shift right=.5, -{Stealth}]
+    \end{tikzcd}
+}
+    \p{Applying #{C_\bullet} we get the double complex}
+    \texfig{
+        \begin{tikzcd}
+            \dots & {C_0(X)} & {C_0(X)} & {C_0(X)} \\
+            \dots & {C_1(X)} & {C_1(X)} & {C_1(X)} \\
+            \dots & {C_2(X)} & {C_2(X)} & {C_2(X)} \\
+            & \dots & \dots & \dots
+            \arrow["0", from=1-1, to=1-2]
+            \arrow["{\operatorname{id}}", from=1-2, to=1-3]
+            \arrow["0", from=1-3, to=1-4]
+            \arrow["0", from=2-1, to=2-2]
+            \arrow[from=2-2, to=1-2]
+            \arrow["{\operatorname{id}}", from=2-2, to=2-3]
+            \arrow[from=2-3, to=1-3]
+            \arrow["0", from=2-3, to=2-4]
+            \arrow[from=2-4, to=1-4]
+            \arrow["0", from=3-1, to=3-2]
+            \arrow[from=3-2, to=2-2]
+            \arrow["{\operatorname{id}}", from=3-2, to=3-3]
+            \arrow[from=3-3, to=2-3]
+            \arrow["0", from=3-3, to=3-4]
+            \arrow[from=3-4, to=2-4]
+            \arrow[from=4-2, to=3-2]
+            \arrow[from=4-3, to=3-3]
+            \arrow[from=4-4, to=3-4]
+        \end{tikzcd}
+    }   
+    \p{The claim for homology then follows from [this lemma.](fp-002D) The claim for cohomology follows similarly from the fact that [#{\operatorname{Hom}} commutes with finite direct sums](), so that we can first apply it to each component and [use this lemma](fp-002G) combined with the previous one.}
+}

@@ -13,7 +13,8 @@
 }
 
 \p{
-    with boundary maps #{\delta_1, \delta_2}. We use the convention of the boundary map of the total complex being #{\delta = \delta_1 + (-1)^n \delta_2}. Then we define
+    with boundary maps #{\delta_1, \delta_2}. We use the convention of the boundary map of the total complex being #{\delta = \delta_1 + (-1)^n \delta_2}. 
+    Then we define
 }
 
 \ul{
@@ -22,10 +23,10 @@
     \li{#{^\square C_{n} = ( \ker \delta_1 \cap \ker \delta_2) / \im (\delta_1 \delta_2) = \bigoplus_i \phantom{\cdot}^\square C_{i, n-1}}, the receptor at #{C_n}}
 }
 
-\p{The identity morphism induces #{C_{n \square} \rightarrow C_{n}^h \rightarrow ^\square C_{n}}. Lastly we get two maps:}
+\p{Where the objects in the last equalities are defined [here.](fp-001E). The identity morphism induces #{C_{n \square} \rightarrow C_{n}^h \rightarrow ^\square C_{n}}. Lastly we get two maps:}
 
 ##{\bar{\delta_1}, \bar{\delta_2} : C_{n \square} \rightarrow ^\square C_{n+1}}
 
 \p{
-    Induced by #{\delta_{1,2} : C_n \rightarrow C_{n+1}}. They compine to #{\bar{\delta} = \bar{\delta_2} + (-1)^n \bar{\delta_1}: C_{n \square} \rightarrow ^\square C_{n+1}}.
+    Induced by #{\delta_{1,2} : C_n \rightarrow C_{n+1}}. They combine to #{\bar{\delta} = \bar{\delta_2} + (-1)^n \bar{\delta_1}: C_{n \square} \rightarrow ^\square C_{n+1}}.
 }

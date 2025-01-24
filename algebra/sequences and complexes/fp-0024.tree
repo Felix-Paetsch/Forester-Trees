@@ -5,7 +5,7 @@
 \import{base-macros}
 
 \p{
-    Let #{C_{\bullet, \bullet}} be a [double complex](fp-001C) with exact columns.
+    Let #{C_{\bullet, \bullet}} be a [double complex](fp-001C) with exact columns with boundary maps in the direction of increasing indices.
     Then we have the following long exact sequence:
 }
 

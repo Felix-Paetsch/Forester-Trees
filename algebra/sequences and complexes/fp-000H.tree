@@ -20,7 +20,7 @@
     Note that many other conventions of defining #{\delta} are possible. We only need an [odd number of minus signs](https://math.stackexchange.com/questions/3147787/sign-convention-for-total-complex) in each square to get an isomporphic theory.
 }
 
-\proof{
+\hproof{
     \p{For each summand #{C_p,q} of #{C_n} evaluated on that summand (i.e. after inclusion) we get:}
     ##{
         \begin{aligned}
