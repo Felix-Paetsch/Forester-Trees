@@ -9,7 +9,7 @@
     is a [quasi-isomorphism.]()
 }
 
-\proof{
+\hproof{
     \transclude{fp-0030}
     \transclude{fp-0031}
     \transclude{fp-0035}

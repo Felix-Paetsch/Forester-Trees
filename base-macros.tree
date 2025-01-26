@@ -185,6 +185,15 @@
   }
 }
 
+\def\missing[text]{
+  \<html:p>[style]{
+    padding: 1em;
+    background-color: rgba(255, 0, 0, 0.2)
+  }{
+    \<html:h3>{Missing} 
+  \text}
+}
+
 \def\seehere[text]{
   \<html:p>[style]{
     padding: 1em;

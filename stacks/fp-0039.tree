@@ -1,0 +1,9 @@
+\title{We get a natural (morita) morphism}
+\taxon{proof}
+\author{felixpätsch}
+\date{2025-01-26}
+
+\p{
+    We have defined maps #{X^{\mathcal{U}}_0 \rightarrow X_0} and #{X^{\mathcal{U}}_0 \rightarrow X_0}. By construction [all required diagrams](fp-000S) commute.
+    The morphism is morita as #{X^{\mathcal{U}}_0 \rightarrow X_0} is a surjective submersion by assumtion and the [required square](fp-000T) is [cartesian]().
+}

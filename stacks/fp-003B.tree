@@ -1,0 +1,13 @@
+\title{After Behrend (incomplete)}
+\taxon{proof}
+\author{felixpätsch}
+\date{2025-01-26}
+\import{base-macros}
+
+\transclude{fp-002Y}
+\missing{A proof of [this lemma.](fp-0033)}
+
+\p{
+    Now Behrend finds for abitrary morita equivalent groupoids (via taking the fibered product over the stack) a (tripple) complex as in [the last step of the previous lemma](fp-0035) with
+    now augementation by the simlicial nerves of the two groupoids and the rows or columns the banal resolutions.
+}

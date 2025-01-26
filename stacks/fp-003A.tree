@@ -1,0 +1,11 @@
+\title{What are the objects in #{\mathbf{Top}}?}
+\author{felixpätsch}
+\date{2025-01-26}
+
+\p{
+    For topological spaces the object #{X^{\mathcal{U}}_1} is given as
+    ##{X^{\mathcal{U}}_1 = \bigsqcup_{i,j \in I} s^{-1}(U_i) \times t^{-1}(U_j).}
+    #{e,i,s,t} are the obvious maps. Multiplication is given on
+    ##{X^{\mathcal{U}}_1 \times_{X^{\mathcal{U}}_0} X^{\mathcal{U}}_1 = \{(a,b,c,d) \in \bigsqcup_{i,j,k,l} s^{-1}(U_i) \times t^{-1}(U_j) \times s^{-1}(U_k) \times t^{-1}(U_l) | t(b) = s(c)\}}
+    by just taking the outer terms of the product.
+}

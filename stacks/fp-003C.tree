@@ -1,0 +1,23 @@
+\title{My own (incomplete)}
+\taxon{proof}
+\author{felixpätsch}
+\date{2025-01-26}
+\import{base-macros}
+
+\put\transclude/expanded{false}
+\transclude{fp-000X}
+\transclude{fp-0013}
+\transclude{fp-0037}
+\put\transclude/expanded{true}
+
+\p{My plan now it:}
+\ol{
+    \li{Given a morita morphism #{X_\bullet \rightarrow Y_\bullet}}
+    \li{Deduce a morita morphism #{X_\bullet^U \rightarrow Y_\bullet^U} over a cover #{U} of #{Y} with local sections}
+    \li{
+        Show the map has a section => We win 1
+    }
+    \li{
+        Show for the covering groupoid we have a quasi-isomorphism
+    }
+}

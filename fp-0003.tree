@@ -9,6 +9,7 @@
     This will be the topics of my next meeting:
 }
 
+\transclude{fp-0037}
 \transclude{fp-0034}
 \transclude{fp-0033}
 \transclude{fp-0032}

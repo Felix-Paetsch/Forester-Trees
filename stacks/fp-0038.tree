@@ -1,0 +1,103 @@
+\title{We actually get a groupoid}
+\taxon{proof}
+\author{felixpätsch}
+\date{2025-01-26}
+\import{base-macros}
+
+\p{
+    We have to check well-definedness of the maps and the [groupoid axioms.](fp-000Q)
+}
+
+\ul{
+    \li{
+        #{e} is well defined as 
+        #{[X_1 \rightrightarrows X_0]} is a groupoid, hence 
+        ##{(X_0  \xrightarrow{e} X_1 \xrightarrow{(s,t)} X_0 \times X_0) =(X_0 \xrightarrow{\Delta} X_0 \times X_0)}
+    }
+    \li{
+        The equality #{s \circ e = t \circ e = \operatorname{id}_{X^{\mathcal{U}}_0}} is just #{\pi_1 \circ \Delta = \pi_2 \circ \Delta = \operatorname{id}_{X^{\mathcal{U}}_0}}
+        and hence holds.
+    }
+    \li{
+        #{i} is well defined:
+        ##{
+            \begin{aligned}
+                X^{\mathcal{U}}_1 \rightarrow X^{\mathcal{U}}_0 \times X^{\mathcal{U}}_0 \xrightarrow{(\pi_2, \pi_1)} X^{\mathcal{U}}_0 \times X^{\mathcal{U}}_0 \rightarrow X_0 \times X_0 \\
+                \text{and } X^{\mathcal{U}}_1 \rightarrow X^{\mathcal{U}}_0 \times X^{\mathcal{U}}_0 \rightarrow X_0 \times X_0 \xrightarrow{(\pi_2, \pi_1)}  X_0 \times X_0
+            \end{aligned}
+        }
+        agree. Since the same holds for
+        ##{
+            \begin{aligned}
+                X^{\mathcal{U}}_1 \rightarrow X_1 \xrightarrow{i} X_1 \xrightarrow{(s,t)} X_0 \times X_0 \\
+                \text{and } X^{\mathcal{U}}_1 \rightarrow X_1 \xrightarrow{(s,t)} X_0 \times X_0 \xrightarrow{(\pi_2, \pi_1)}  X_0 \times X_0
+            \end{aligned}
+        }
+        we get that both maps #{X^{\mathcal{U}}_1 \rightarrow X_0 \times X_0} from top left to bottom right agree, as they agree by construction already before composing it with the final #{(\pi_2, \pi_1)}.
+    }
+    \li{
+        We have #{i^2 = \operatorname{id}_{X^{\mathcal{U}}_1}} e.g. by considering the following commutative diagram:
+        \texfig{
+            \begin{tikzcd}
+                {X^{\mathcal{U}}_1} & {X^{\mathcal{U}}_0 \times X^{\mathcal{U}}_0} \\
+                {X_1} & {X^{\mathcal{U}}_1} & {X^{\mathcal{U}}_0 \times X^{\mathcal{U}}_0} \\
+                & {X_1} & {X^{\mathcal{U}}_1} & {X^{\mathcal{U}}_0 \times X^{\mathcal{U}}_0} \\
+                && {X_1} & {X_0 \times X_0}
+                \arrow[from=1-1, to=1-2]
+                \arrow[from=1-1, to=2-1]
+                \arrow["i"', from=1-1, to=2-2]
+                \arrow["{{(\pi_2, \pi_1)}}", from=1-2, to=2-3]
+                \arrow["i"', from=2-1, to=3-2]
+                \arrow[from=2-2, to=2-3]
+                \arrow[from=2-2, to=3-2]
+                \arrow["i"', from=2-2, to=3-3]
+                \arrow["{{(\pi_2, \pi_1)}}", from=2-3, to=3-4]
+                \arrow["i"', from=3-2, to=4-3]
+                \arrow[from=3-3, to=3-4]
+                \arrow[from=3-3, to=4-3]
+                \arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=3-3, to=4-4]
+                \arrow[from=3-4, to=4-4]
+                \arrow["{{(s,t)}}"', from=4-3, to=4-4]
+            \end{tikzcd}
+        }
+        with the outer diagonals composing to identity, hence the inner diagonal by uniqueness aswell.
+    }
+    \li{
+        Multiplication is well defined. \br
+        We will check this my considering the two maps from top left to bottom right composed with #{\pi_i}. We will only check it for #{\pi_1}. All the following maps agree:
+        ##{
+            X^{\mathcal{U}}_1 \times_{X^{\mathcal{U}}_0} X^{\mathcal{U}}_1 \rightarrow X^{\mathcal{U}}_1 \times X^{\mathcal{U}}_1 \xrightarrow{(s\circ\pi_1, t\circ\pi_2)} X^{\mathcal{U}}_0 \times X^{\mathcal{U}}_0 \rightarrow X_0 \times X_0 \xrightarrow{\pi_1} X_0 \\
+            X^{\mathcal{U}}_1 \times_{X^{\mathcal{U}}_0} X^{\mathcal{U}}_1 \rightarrow X^{\mathcal{U}}_1 \times X^{\mathcal{U}}_1 \xrightarrow{s\circ\pi_1} X^{\mathcal{U}}_0 \rightarrow X_0 \\
+            X^{\mathcal{U}}_1 \times_{X^{\mathcal{U}}_0} X^{\mathcal{U}}_1 \xrightarrow{\pi_1} X^{\mathcal{U}}_1 \xrightarrow{s} X^{\mathcal{U}}_0 \rightarrow X_0 \\
+        }
+        Similarly the following maps agree:
+        ##{
+            X^{\mathcal{U}}_1 \times_{X^{\mathcal{U}}_0} X^{\mathcal{U}}_1 \rightarrow X_1 \times_{X_0} X_1 \xrightarrow{m} X_1 \xrightarrow{(s,t)} X_0 \times X_0 \xrightarrow{\pi_1} X_0 \\
+            X^{\mathcal{U}}_1 \times_{X^{\mathcal{U}}_0} X^{\mathcal{U}}_1 \rightarrow X_1 \times_{X_0} X_1 \xrightarrow{s \circ \pi_1} X_0 \\
+            X^{\mathcal{U}}_1 \times_{X^{\mathcal{U}}_0} X^{\mathcal{U}}_1 \xrightarrow{\pi_1} X^{\mathcal{U}}_1 \rightarrow X_1 \xrightarrow{s} X_0 \\
+        }
+        The maps
+        ##{
+            X^{\mathcal{U}}_1 \xrightarrow{s} X^{\mathcal{U}}_0 \rightarrow X_0 \\
+            X^{\mathcal{U}}_1 \rightarrow X_1 \xrightarrow{s} X_0 \\
+        }
+        agree by construction. Arguing similarly for post-composition with #{\pi_2} we are done.
+    }
+    \li{
+        #{s \circ m = s \circ \pi_1} and #{t \circ m = t \circ \pi_2} hold by construction
+    }
+    \li{
+        We have ##{m \circ ((e \circ s), \operatorname{id}_{X^{\mathcal{U}}_1}) = \operatorname{id}_{X^{\mathcal{U}}_1}} as the identity holds after composing it with the morphisms
+        #{X^{\mathcal{U}}_1 \rightarrow X_1} and #{X^{\mathcal{U}}_1 \rightarrow X^{\mathcal{U}}_0 \times X^{\mathcal{U}}_0} respectively. The same holds for ##{m  \circ (\operatorname{id}_{X_1}, (e \circ t)) =  \operatorname{id}_{X^{\mathcal{U}}_1}.}
+    }
+    \li{Finally associativity of multiplication follows from the fact that all maps 
+        ##{
+            X^{\mathcal{U}}_1 \times_{X^{\mathcal{U}}_0} X^{\mathcal{U}}_1 \times_{X^{\mathcal{U}}_0} X^{\mathcal{U}}_1 \rightarrow X_1\\
+            X^{\mathcal{U}}_1 \times_{X^{\mathcal{U}}_0} X^{\mathcal{U}}_1 \times_{X^{\mathcal{U}}_0} X^{\mathcal{U}}_1 \rightarrow X^{\mathcal{U}}_0 \times X^{\mathcal{U}}_0
+        }
+        induced by different order of multiplication agree and hence do the maps
+        ##{
+            X^{\mathcal{U}}_1 \times_{X^{\mathcal{U}}_0} X^{\mathcal{U}}_1 \times_{X^{\mathcal{U}}_0} X^{\mathcal{U}}_1 \rightarrow X^{\mathcal{U}}_1 \times_{X^{\mathcal{U}}_0} X^{\mathcal{U}}_1.
+        }
+    }
+}

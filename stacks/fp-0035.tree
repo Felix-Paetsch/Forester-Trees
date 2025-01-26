@@ -1,5 +1,5 @@
 \title{It follows that [the claim](fp-002Y) holds in the general case}
-\taxon{lemma}
+\taxon{step}
 \author{felixpätsch}
 \date{2025-01-25}
 \import{base-macros}
@@ -85,7 +85,7 @@
     with #{U_S \coloneqq \bigcap_{j \in S} U_j}. Hence #{C_\bullet(W_{\bullet, k})\rightarrow C_\bullet(V_k)} is a [quasi-isomorphism]() by [the previous lemma.](fp-0030)
 }
 \p{
-    The map #{W_{k,0} \rightarrow Y_k} comes from a [good cover]() as the good open cover #{V \rightarrow X} [pulls back]() to an open cover by [this lemma]() which obviously has finite intersections contractible, as that also hold for the cover of #{X}.
+    The map #{W_{k,0} \rightarrow Y_k} comes from a [good cover]() as the good open cover #{V \rightarrow X} [pulls back]() to an open cover (by [this lemma](fp-0036)) which obviously has finite intersections contractible, as that also hold for the cover of #{X}.
     Hence by [the above lemma](fp-0031) we have a quasi-isomorphism #{C_\bullet(W_{k, \bullet})\rightarrow C_\bullet(Y_k)}.
 }
 \p{
