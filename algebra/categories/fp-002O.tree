@@ -1,0 +1,11 @@
+\title{Normal mono/epimorphism}
+\taxon{definition}
+\author{felixpätsch}
+\date{2025-01-24}
+\import{base-macros}
+
+\p{
+    A monomorphism #{A \xrightarrow{f} B} is normal if it is the [kernel](fp-002M) of some morphism, i.e. there exists
+    #{B \xrightarrow{g} C}, such that #{(A, f)} satisfy the universal property of the [kernel.](fp-002M)
+    An epimorphism is (co)normal if it is the [cokernel](fp-002N) of some morphism.
+}

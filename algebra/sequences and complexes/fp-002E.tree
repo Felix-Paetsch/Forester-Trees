@@ -45,6 +45,8 @@
     Then the [total homology](fp-000H) of the complex is #{0} everywhere.
 }
 
+\proof{Special case of [this lemma.](fp-002C)}
+
 \hproof{
     \p{Let}
     ##{C_n \coloneqq \bigoplus_{i=0}^n D_i.}

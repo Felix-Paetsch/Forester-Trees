@@ -1,0 +1,14 @@
+\title{Dual category}
+\taxon{definition}
+\author{felixpätsch}
+\date{2025-01-24}
+
+\p{
+    Given a category #{\mathscr{C}} define its dual category #{\mathscr{C}^{\operatorname{op}}} by
+    ##{
+        \begin{aligned}
+            \operatorname{ob} \mathscr{C}^{\operatorname{op}} &= \operatorname{ob} \mathscr{C} \\
+            \operatorname{Hom}_{\mathscr{C}^{\operatorname{op}}}(A, B) &= \operatorname{Hom}_{\mathscr{C}}(B, A)
+        \end{aligned}
+    }
+}

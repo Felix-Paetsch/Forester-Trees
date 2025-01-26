@@ -2,3 +2,5 @@
 \taxon{lemma}
 \author{felixpätsch}
 \date{2025-01-24}
+
+\p{The [definition](fp-002I) has each statement self-dual. Hence they hold in the dual category.}

@@ -1,0 +1,21 @@
+\title{[Abelian categories](fp-002I) are [enriched]() over #{\mathbf{AbGrp}}}
+\taxon{lemma}
+\author{felixpätsch}
+\date{2025-01-24}
+\import{base-macros}
+
+\p{
+    Let #{f,g : A \rightarrow B}. Define their sum #{f + g} as
+}
+##{f + g \coloneqq A \xrightarrow{\Delta} A \prod A \cong A \coprod A \xrightarrow{f,g} B.}
+\p{
+    Define the zero morphism as #{A \rightarrow 0 \rightarrow B}.
+}
+
+\proof{
+    \put\transclude/expanded{false}
+    \transclude{fp-002W}
+    \put\transclude/expanded{true}
+    
+    \seehere{See [Handbook of categorical algebra, Vol. 2](categorical-algebra-borceux), Theorem 1.6.4}
+}

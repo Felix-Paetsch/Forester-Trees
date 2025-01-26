@@ -1,0 +1,99 @@
+\title{It follows that [the claim](fp-002Y) holds in the general case}
+\taxon{lemma}
+\author{felixpätsch}
+\date{2025-01-25}
+\import{base-macros}
+
+\p{
+    Let #{\{U_i\}_{i \in I}} be a [good open cover]() of #{X} over which #{f} admits sections. Let #{}. Define
+}
+
+##{
+    \begin{aligned}
+        V &\coloneqq \bigsqcup_{i\in I} U_i\\
+        V_p &\coloneqq \underbrace{V \times_X V \times_X \dots \times_X V}_{p+1 \text{ factors}} \\
+        Y_p &\coloneqq \underbrace{Y \times_X Y \times_X \dots \times_X Y}_{p+1 \text{ factors}} \\
+        
+        W_{mn} &\coloneqq Y_m \times_X V_n 
+    \end{aligned}
+}
+
+\p{
+    Consider the following tripple complex, augmented either by #{C_\bullet(Y_\bullet)} or #{C_\bullet(V_\bullet)}:
+}
+
+\texfig{
+    \begin{tikzcd}
+        & \dots & \dots & \dots & \dots \\
+        \dots & {C_\bullet(W_{2,2})} & {C_\bullet(W_{1,2})} & {C_\bullet(W_{0,2})} & {C_\bullet(V_2)} \\
+        \dots & {C_\bullet(W_{2,1})} & {C_\bullet(W_{1,1})} & {C_\bullet(W_{0,1})} & {C_\bullet(V_1)} \\
+        \dots & {C_\bullet(W_{2,0})} & {C_\bullet(W_{1,0})} & {C_\bullet(W_{0,0})} & {C_\bullet(V_0)} \\
+        \dots & {C_\bullet(Y_2)} & {C_\bullet(Y_1)} & {C_\bullet(Y_0)}
+        \arrow[from=1-2, to=2-2]
+        \arrow[from=1-3, to=2-3]
+        \arrow[from=1-4, to=2-4]
+        \arrow[from=1-5, to=2-5]
+        \arrow[from=2-1, to=2-2]
+        \arrow[from=2-2, to=2-3]
+        \arrow[from=2-2, to=3-2]
+        \arrow[from=2-3, to=2-4]
+        \arrow[from=2-3, to=3-3]
+        \arrow[from=2-4, to=2-5]
+        \arrow[from=2-4, to=3-4]
+        \arrow[from=2-5, to=3-5]
+        \arrow[from=3-1, to=3-2]
+        \arrow[from=3-2, to=3-3]
+        \arrow[from=3-2, to=4-2]
+        \arrow[from=3-3, to=3-4]
+        \arrow[from=3-3, to=4-3]
+        \arrow[from=3-4, to=3-5]
+        \arrow[from=3-4, to=4-4]
+        \arrow[from=3-5, to=4-5]
+        \arrow[from=4-1, to=4-2]
+        \arrow[from=4-2, to=4-3]
+        \arrow[from=4-2, to=5-2]
+        \arrow[from=4-3, to=4-4]
+        \arrow[from=4-3, to=5-3]
+        \arrow[from=4-4, to=4-5]
+        \arrow[from=4-4, to=5-4]
+        \arrow[from=5-1, to=5-2]
+        \arrow[from=5-2, to=5-3]
+        \arrow[from=5-3, to=5-4]
+    \end{tikzcd}
+}
+
+\p{Here the maps are the obvious ones, i.e. in each row or colum the maps from the [construction of groupoid homology.](fp-000F) This obviously forms a double complex.}
+
+\p{
+    Notice that the the rows #{C_\bullet(W_{\bullet, k})} are precisely the simplicial resolution of 
+    the [banal groupoids](fp-002Z) associated to #{W_{0,k} \rightarrow V_k}, e.g. inductively with
+}
+#{W_{n,k} \times_{V_k} W_{0,k} = Y_n \times_X V_k \times_{V_k} Y_0 \times_{X} V_k = Y_n \times_X V_k \times_{X} Y_0 = W_{n+1,k}}
+\p{
+    With the maps also agreeign. The columns are precisely the simplicial resolution
+    of the [banal groupoid](fp-002Z) of #{W_{k,\bullet}\rightarrow Y_k}.
+}
+\p{The map #{W_{0,k} = Y \times_X V_k \xrightarrow{\pi_2} V_k} admits a section by choice of #{\{U_i\}_{i\in I}} as we have}
+##{
+    \begin{aligned}
+        V_k &= V \times_X \dots \times_X V = \bigsqcup_{i\in I} U_i \times_X \dots \times_X \bigsqcup_{i\in I} U_i \\
+            &= \bigsqcup_{S \subset I, 1 \leq |S| \leq k+1} U_{S} \\
+        W_{0,k} &= Y \times_X V_k = \bigsqcup_{S \subset I, 1 \leq |S| \leq k+1} f^{-1}(U_{S})
+    \end{aligned}
+}
+\p{
+    with #{U_S \coloneqq \bigcap_{j \in S} U_j}. Hence #{C_\bullet(W_{\bullet, k})\rightarrow C_\bullet(V_k)} is a [quasi-isomorphism]() by [the previous lemma.](fp-0030)
+}
+\p{
+    The map #{W_{k,0} \rightarrow Y_k} comes from a [good cover]() as the good open cover #{V \rightarrow X} [pulls back]() to an open cover by [this lemma]() which obviously has finite intersections contractible, as that also hold for the cover of #{X}.
+    Hence by [the above lemma](fp-0031) we have a quasi-isomorphism #{C_\bullet(W_{k, \bullet})\rightarrow C_\bullet(Y_k)}.
+}
+\p{
+    [Now we know](fp-0033) that we can compute the total homology of the (unaugmented) tripple complex #{C_\bullet(W_{\bullet, \bullet})} either via the quasi-isomorphism #{\operatorname{tot}(C_\bullet(W_{\bullet, \bullet})) \rightarrow \operatorname{tot}(C_\bullet(V_\bullet))}
+    or the quasi-isomorphism #{\operatorname{tot}(C_\bullet(W_{\bullet, \bullet})) \rightarrow \operatorname{tot}(C_\bullet(Y_\bullet))}. We get:
+}
+##{H_\bullet([Y \times_X Y \rightrightarrows Y]) \cong H_\bullet([V \times_X V \rightrightarrows V])}
+\p{
+    Since the already know #{H_\bullet([V \times_X V \rightrightarrows V]) \cong H_\bullet(X)} by [the above lemma](fp-0031) we are done.
+}
+\todo{This (or smth later) is canonical (and functorial..)}

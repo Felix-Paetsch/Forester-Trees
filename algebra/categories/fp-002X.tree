@@ -1,0 +1,43 @@
+\title{Table of dual concepts}
+\author{felixpätsch}
+\date{2025-01-25}
+\import{base-macros}
+
+\table{
+    \tr{
+        \td{#{A \rightarrow B}}
+        \td{#{B \rightarrow A}}
+    }
+    \tr{
+        \td{Limit}
+        \td{Colimit}
+    }
+    \tr{
+        \td{Kernel}
+        \td{Cokernel}
+    }
+    \tr{
+        \td{Chain Complex}
+        \td{Chain Complex}
+    }
+    \tr{
+        \td{Exact}
+        \td{Exact}
+    }
+    \tr{
+        \td{Homology}
+        \td{Homology}
+    }
+    \tr{
+        \td{#{0}-object}
+        \td{#{0}-object}
+    }
+    \tr{
+        \td{#{0}-morphism}
+        \td{#{0}-morphism}
+    }
+    \tr{
+        \td{Identity}
+        \td{Identity}
+    }
+}

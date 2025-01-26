@@ -4,7 +4,10 @@
 \import{base-macros}
 
 \transclude{fp-002I}
+\put\transclude/expanded{false}
 \transclude{fp-002Q}
 \transclude{fp-002R}
 \transclude{fp-002S}
+\put\transclude/expanded{true}
 \transclude{fp-002G}
+\transclude{fp-002X}

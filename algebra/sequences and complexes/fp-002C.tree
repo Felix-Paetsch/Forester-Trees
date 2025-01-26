@@ -2,8 +2,12 @@
 \author{felixpätsch}
 
 \date{2025-01-24}
+\transclude{fp-0034}
+\put\transclude/expanded{false}
 \transclude{fp-002E}
 \transclude{fp-002D}
+\put\transclude/expanded{true}
+
 
 \p{To get results with all arrows reversed also consider this exposition:}
 \put\transclude/expanded{false}

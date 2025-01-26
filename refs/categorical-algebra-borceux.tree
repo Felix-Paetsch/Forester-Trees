@@ -1,0 +1,15 @@
+\title{Handbook of Categorical Algebra (Vol II.)}
+\author{Francis Borceux}
+\taxon{reference}
+\date{1994}
+\import{base-macros}
+
+\meta{bibtex}\verb<<<|
+@book{borceux1994handbook,
+  title={Handbook of Categorical Algebra},
+  author={Borceux, Francis},
+  year={1994},
+  publisher={Cambridge University Press},
+  url={https://www.cambridge.org/core/books/handbook-of-categorical-algebra/EF86DCA2B6B7BBA10CE255ABC572601B}
+}
+<<<

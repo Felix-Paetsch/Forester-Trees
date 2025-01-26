@@ -1,0 +1,12 @@
+\title{Next meeting}
+\author{felixpätsch}
+\date{2025-01-15}
+\import{base-macros}
+
+\question{
+    Should I study Check homology? Where?
+}
+
+\question{
+    Should I study spectral sequences ~ how do i prove [this lemma?](fp-0034)
+}

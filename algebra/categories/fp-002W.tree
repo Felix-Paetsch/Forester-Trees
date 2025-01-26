@@ -1,0 +1,53 @@
+\title{Definition of the morphisms}
+\author{felixpätsch}
+\date{2025-01-24}
+\import{base-macros}
+
+\p{The morphisms are the following:}
+\texfig{
+    \begin{tikzcd}
+        A \\
+        & {A \prod A} & A \\
+        & A
+        \arrow["\Delta", dotted, from=1-1, to=2-2]
+        \arrow[bend left, from=1-1, to=2-3]
+        \arrow[bend right, from=1-1, to=3-2]
+        \arrow[from=2-2, to=2-3]
+        \arrow[from=2-2, to=3-2]
+    \end{tikzcd}
+}
+\texfig{
+    \begin{tikzcd}
+        {A\coprod A} & A \\
+        A \\
+        &&& A \\
+        && A & {A\prod A}
+        \arrow[color={rgb,255:red,92;green,214;blue,92}, from=1-1, to=3-4]
+        \arrow[color={rgb,255:red,92;green,214;blue,92}, from=1-1, to=4-3]
+        \arrow[from=1-2, to=1-1]
+        \arrow["{\operatorname{id}}", from=1-2, to=3-4]
+        \arrow["0", bend left=12, from=1-2, to=4-3]
+        \arrow[from=2-1, to=1-1]
+        \arrow["0"', bend right=12, from=2-1, to=3-4]
+        \arrow["{\operatorname{id}}"', from=2-1, to=4-3]
+        \arrow[color={rgb,255:red,153;green,92;blue,214}, from=4-4, to=1-1]
+        \arrow[from=4-4, to=3-4]
+        \arrow[from=4-4, to=4-3]
+    \end{tikzcd}
+}
+\p{
+    The maps from the upper #{A}'s to the lower #{A}'s induce the green morphisms by the universal prperty of the coproduct.
+    The gree arrows induce the purple arrow by the universal property of products. By assumption that arrow is an isomorphism.
+}
+\texfig{
+    \begin{tikzcd}
+        & A \\
+        A & {A \coprod A} \\
+        && B
+        \arrow[from=1-2, to=2-2]
+        \arrow["g"', bend left, from=1-2, to=3-3]
+        \arrow[from=2-1, to=2-2]
+        \arrow["f"', bend right, from=2-1, to=3-3]
+        \arrow[dotted, from=2-2, to=3-3]
+    \end{tikzcd}
+}

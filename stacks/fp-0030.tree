@@ -1,0 +1,31 @@
+\title{[The claim](fp-002Y) holds for maps with sections}
+\taxon{lemma}
+\author{felixpätsch}
+\date{2025-01-25}
+
+\p{
+    Assume #{Y \xrightarrow{f_0} X} admits a section #{X \xrightarrow{s_0} Y} i.e. #{[X \xrightarrow{s_0} Y \xrightarrow{f_0} X] = \operatorname{id}_X}
+    then [we get a map](fp-0013) #{[Y \rightrightarrows Y] \xrightarrow{s} [X_1 \rightrightarrows X_0]} such that
+    ##{
+        \begin{aligned}
+            f \circ s &= \operatorname{id}_{[Y \rightrightarrows Y]} \text{, and}\\
+            s \circ f &\cong \operatorname{id}_{[X_1 \rightrightarrows X_0]}.
+        \end{aligned}
+    }
+
+    The [induced maps](fp-000K) 
+    ##{
+        \begin{aligned}
+            \bar{f}&:H_n([X_1 \rightrightarrows X_0]) \rightarrow [Y \rightrightarrows Y] \text{, and}\\
+            \bar{s}&:H_n([Y \rightrightarrows Y] \rightarrow [X_1 \rightrightarrows X_0])
+        \end{aligned}
+    }
+    then satisfy
+    ##{
+       \begin{aligned}
+            \overline{f \circ s} &= \overline{\operatorname{id}_{[Y \rightrightarrows Y]}} = \operatorname{id}_{H_n([Y \rightrightarrows Y])} \\
+            \overline{s \circ f} &= \overline{\operatorname{id}_{[X_1 \rightrightarrows X_0]}} = \operatorname{id}_{H_n([X_1 \rightrightarrows X_0])}.
+        \end{aligned}
+    }
+    The latter follows as [#{2}-isomorphic maps](fp-0008) induce [the same maps on homology.](fp-000X)
+}

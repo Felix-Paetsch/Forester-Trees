@@ -1,0 +1,16 @@
+\taxon{lemma}
+\author{felixpätsch}
+\date{2025-01-25}
+\import{base-macros}
+
+\p{
+    Let #{Y \rightarrow X} be a surjective submersion (admitting local sections) in #{\mathbf{Top}} or #{#{C^\infty-\mathbf{Mfd_\R}}}.
+    Let #{[Y_1 \rightrightarrows Y_2]} be the [presenting groupoid](fp-002Z), then #{C_\bullet(Y_1 \rightrightarrows Y_0) \rightarrow C_\bullet(X)}
+    is a [quasi-isomorphism.]()
+}
+
+\proof{
+    \transclude{fp-0030}
+    \transclude{fp-0031}
+    \transclude{fp-0035}
+}

@@ -176,11 +176,37 @@
   \text}
 }
 
-\def\devNote[text]{
+\def\skipped{
+  \<html:p>[style]{
+    padding: 1em;
+    background-color: #ABC4BA
+  }{
+    Skipped.
+  }
+}
+
+\def\seehere[text]{
+  \<html:p>[style]{
+    padding: 1em;
+    background-color: #FFCF99
+  }{
+    \text}
+}
+
+\def\note[text]{
   \<html:p>[style]{
     padding: 1em;
     background-color: #D7BFAD
   }{
     \<html:h3>{DevNote:} 
+  \text}
+}
+
+\def\question[text]{
+  \<html:p>[style]{
+    padding: 1em;
+    background-color:rgb(181, 215, 173)
+  }{
+    \<html:h3>{Question:} 
   \text}
 }

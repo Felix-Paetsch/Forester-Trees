@@ -45,6 +45,8 @@
     Then the [total homology](fp-000H) of the complex agrees with the homology of #{D_\bullet} (functorially.)
 }
 
+\proof{Special case of [this lemma.](fp-002C)}
+
 \hproof{
     \p{We prove this by direct computation. Let}
     ##{C_n \coloneqq \bigoplus_{i=0}^n D_i.}

@@ -4,6 +4,12 @@
 
 \transclude{fp-000W}
 
-\p{See [here](fp-0006) for the notes on my last meeting with my advisor [Thomas Walpuski](). The following is a summary of what I currently look at:}
+\p{
+    See [here](fp-0006) for the notes on my last meeting with my advisor [Thomas Walpuski](). 
+    This will be the topics of my next meeting:
+}
 
+\transclude{fp-0034}
+\transclude{fp-0033}
+\transclude{fp-0032}
 
